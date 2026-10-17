@@ -1,38 +1,36 @@
-# RazorClaw Systems — Landing Page
+# RazorClaw Systems — Investor Website v2
 
-Статический сайт-лендинг. Один HTML-файл + папка `assets/` с логотипом, иконкой и видео перехвата.
+Статический сайт: `index.html` + папка `assets/`. Сборки нет. Запуск на GitHub Pages: загрузите содержимое папки в корень репозитория (`index.html` и `assets/` рядом), Settings → Pages → Deploy from branch → `/ (root)`.
 
 ## Структура
-
 ```
 index.html
-assets/
-  logo.png              — горизонтальный логотип (шапка/футер)
-  symbol.png             — иконка-клешня (favicon, вотермарк в hero)
-  intercept.mp4           — видео перехвата (H.264, для Safari/широкой совместимости)
-  intercept.webm          — видео перехвата (VP9, меньше вес, для Chrome/Firefox/Edge)
-  intercept-poster.jpg    — стоп-кадр, показывается пока видео грузится
+assets/ logo.png, symbol.png, og-image.png, intercept.webm, intercept.mp4, intercept-poster.jpg
 ```
 
-Видео подключено через `<video><source webm><source mp4></video>` — браузер сам выберет поддерживаемый формат.
+## Как добавить запись в Engineering Updates
+В `index.html` найдите блок `<script type="application/json" id="updatesData">` и добавьте объект в массив (новые записи — сверху):
 
-## Запуск через GitHub Pages
+```json
+{
+ "date": "2026-11", "date_en": "November 2026", "date_ru": "Ноябрь 2026",
+ "title": "Title", "title_ru": "Заголовок",
+ "cat": "Tracking", "cat_ru": "Сопровождение",
+ "text": "Short factual description.", "text_ru": "Краткое фактическое описание.",
+ "status": "Demonstrated",
+ "link": "https://... (необязательно, только публичная ссылка на подтверждение)"
+}
+```
+- `cat`: Tracking, Recovery, Control Station, Testing, UI.
+- `status`: Demonstrated, In Development, Testing, Planned (другие значения отображаются как Planned).
+- Точные результаты тестов публикуйте только после проверки CI/test report. Не публикуйте токены, внутренние адреса и чувствительные детали.
+- Страница остальным не затрагивается: список строится скриптом из этого блока.
 
-1. Создайте новый репозиторий на GitHub (или используйте существующий).
-2. Загрузите **всё содержимое этой папки** в корень репозитория, сохранив структуру (`index.html` и папку `assets/` рядом, на одном уровне).
-3. Зайдите в **Settings → Pages**.
-4. В разделе **Build and deployment** выберите:
-   - Source: **Deploy from a branch**
-   - Branch: **main** (или ваша основная ветка), папка **/ (root)**
-5. Нажмите **Save**. Через 1–2 минуты сайт будет доступен по адресу вида:
-   `https://<ваш-логин>.github.io/<название-репозитория>/`
+## Скриншоты Control Station
+Сейчас в разделе 06 показана схема-макет с пометкой DESIGN CONCEPT. Когда будут реальные скриншоты, положите их в `assets/` и замените блок `<figure class="cs-visual">` на `<img>` с alt-текстом.
 
-## Локальная проверка перед загрузкой
+## Откат
+Предыдущая версия сохранена в `backup_before_v2/index.html` (рядом с `assets/` из этого же архива).
 
-Просто откройте `index.html` в браузере двойным кликом — сайт полностью статический, сервер не требуется. Видео и все ассеты подтянутся по относительным путям, если папка `assets/` лежит рядом с `index.html`.
-
-## Важно
-
-- Не переименовывайте файлы внутри `assets/` и не меняйте их расположение — пути в `index.html` жёстко ссылаются на `assets/...`.
-- Если планируете кастомный домен — добавьте файл `CNAME` в корень репозитория (GitHub Pages сгенерирует подсказку в интерфейсе Settings → Pages).
-- Сайт на чистом HTML/CSS/JS, без сборки — никакой `npm install` или билд-шаг не нужен.
+## Форма
+Форма работает через `mailto:` и ничего не отправляет на сервер — это явно написано на сайте.

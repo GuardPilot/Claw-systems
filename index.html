@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>RazorClaw Systems — Autonomous AI Security Drones</title>
-<meta name="description" content="RazorClaw Systems builds autonomous AI-powered security drones for 24/7 perimeter protection.">
+<title>RazorClaw Systems | Aerial Intelligence &amp; Target Tracking</title>
+<meta name="description" content="RazorClaw Systems develops computer vision, target tracking, reacquisition and mission-control software for next-generation aerial monitoring.">
+<link rel="canonical" href="https://razorclaw.tech/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RazorClaw Systems">
+<meta property="og:title" content="RazorClaw Systems | Aerial Intelligence &amp; Target Tracking">
+<meta property="og:description" content="Computer vision, target tracking, reacquisition and mission-control software for next-generation aerial monitoring. Research &amp; Development · Pre-Seed.">
+<meta property="og:url" content="https://razorclaw.tech/">
+<meta property="og:image" content="https://razorclaw.tech/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="RazorClaw Systems logo on a dark tactical background">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RazorClaw Systems | Aerial Intelligence &amp; Target Tracking">
+<meta name="twitter:description" content="Computer vision, target tracking, reacquisition and mission-control software for next-generation aerial monitoring.">
+<meta name="twitter:image" content="https://razorclaw.tech/assets/og-image.png">
 <meta name="theme-color" content="#0B0B0D">
 <link rel="icon" type="image/png" href="assets/symbol.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1052,6 +1066,158 @@ header#nav::before{
 .next-steps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;color:var(--off);font-size:15px;}
 .next-steps li::marker{color:var(--cyber);font-family:var(--font-mono);}
 
+
+/* ============================================================
+   INVESTOR UPDATE v2 — statuses, hero honesty labels, new sections
+   ============================================================ */
+.skip-link{position:fixed;left:12px;top:12px;transform:translateY(-300%);z-index:3000;background:var(--cyber);color:var(--black-deep);padding:10px 16px;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;transition:transform .15s ease;}
+.skip-link{visibility:hidden;}
+.skip-link:focus{transform:none;visibility:visible;}
+.anchor-alias{display:block;height:0;width:0;overflow:hidden;position:relative;top:-80px;}
+.nav-mobile-only{display:none;}
+@media (max-width:899px){ .nav-mobile-only{display:list-item;} }
+@media (min-width:900px) and (max-width:1199px){
+  .nav-links{gap:16px;font-size:11px;letter-spacing:.06em;}
+  .nav-cta{display:none;}
+  .nav-mobile-only{display:list-item;}
+}
+textarea{font:inherit;}
+.field textarea{
+  width:100%;background:var(--charcoal-2);border:1px solid var(--line);color:var(--white);
+  padding:13px 14px;font-family:var(--font-body);font-size:15px;resize:vertical;min-height:84px;
+  clip-path:var(--edge-sm);transition:border-color .15s ease;
+}
+.field textarea:focus{border-color:var(--cyber);outline:none;}
+.field input::placeholder{color:var(--steel-soft);}
+.form-success.error{border-color:rgba(255,77,77,.5);color:#FF8A8A;}
+.section-head p{margin:14px 0 0;max-width:68ch;color:var(--off);font-size:15.5px;}
+.section .container h2{font-size:clamp(28px,4vw,42px);line-height:1.15;}
+.section-head{max-width:760px;}
+
+/* status badges: colour + glyph + text (never colour alone) */
+.tag.st{gap:7px;white-space:normal;line-height:1.35;}
+.tag.st .g{font-size:11px;line-height:1;flex:none;}
+.tag.st-done{color:#4ADE80;border-color:rgba(74,222,128,.45);background:rgba(74,222,128,.06);}
+.tag.st-dev{color:var(--cyber);border-color:var(--cyber-dim);background:rgba(0,224,255,.05);}
+.tag.st-test{color:var(--amber);border-color:rgba(255,176,32,.45);background:rgba(255,176,32,.05);}
+.tag.st-sim{color:var(--white);border-color:rgba(242,244,245,.38);background:rgba(255,255,255,.04);}
+.tag.st-plan{color:var(--steel-soft);border-color:var(--line);border-style:dashed;}
+.tag.st-next{color:var(--cyber);border-color:var(--cyber);background:rgba(0,224,255,.10);}
+.tag.st-stage{color:var(--cyber);border-color:var(--cyber);background:rgba(0,224,255,.08);}
+.tag.st-stage .dot{background:var(--cyber);box-shadow:0 0 8px var(--cyber);}
+.tl-item .tag, .dev-card .tag{align-self:flex-start;}
+
+/* hero honesty labels */
+.hero-content h1{max-width:19ch;font-size:clamp(32px,4.8vw,58px);}
+.hero-content .hero-desc{font-size:15.5px;color:var(--off);max-width:56ch;margin:0 0 14px;}
+.hero-content .hero-stage-note{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.04em;color:var(--cyber);max-width:60ch;margin:0 0 30px;}
+.hero-ctas{align-items:center;margin-bottom:40px;}
+.hero-link{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--off);border-bottom:1px solid var(--cyber-dim);padding:6px 0;}
+.hero-link:hover{color:var(--cyber);}
+.sim-note{display:flex;gap:8px;align-items:center;margin:16px 0 0;font-size:11.5px;letter-spacing:.06em;color:var(--amber);text-transform:uppercase;}
+.video-panel .sim-badge{
+  position:absolute;top:10px;right:32px;z-index:3;
+  font-size:9px;letter-spacing:.1em;color:var(--black-deep);background:var(--amber);
+  padding:3px 8px;clip-path:var(--edge-sm);font-weight:500;
+}
+.video-panel .feed-zone{display:none;}
+.video-panel .vp-telemetry{bottom:30px;}
+.video-panel .vp-caption{
+  position:absolute;left:10px;right:10px;bottom:9px;z-index:2;
+  font-size:9px;letter-spacing:.06em;color:var(--amber);text-transform:uppercase;
+  text-shadow:0 0 6px rgba(0,0,0,.8);
+}
+.di-note{margin:6px 0 0;font-size:11px;line-height:1.45;color:var(--steel-soft);}
+.dossier-body{padding:14px 16px;}
+
+/* architecture pipeline */
+.pipe-wrap{margin-top:44px;}
+.pipe{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;max-width:860px;border:1px solid var(--line);background:var(--line);gap:1px;}
+.pipe-node{
+  display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:center;
+  background:var(--panel);padding:16px 20px;opacity:.38;transition:opacity .5s ease, box-shadow .5s ease;
+  position:relative;
+}
+.pipe-node.on{opacity:1;}
+.pipe-node.pn-sim.on{box-shadow:inset 3px 0 0 rgba(242,244,245,.5);}
+.pipe-node.pn-dev.on{box-shadow:inset 3px 0 0 var(--cyber);}
+.pipe-node.pn-plan.on{box-shadow:inset 3px 0 0 var(--steel);}
+.pipe-node.pn-plan{background:repeating-linear-gradient(135deg,var(--panel) 0 10px,#17191e 10px 20px);}
+.pn-idx{color:var(--cyber);font-size:12px;}
+.pn-body{min-width:0;}
+.pn-body h3{font-size:18px;letter-spacing:.02em;}
+.pn-note{display:block;margin-top:4px;font-size:13px;color:var(--steel-soft);}
+@media (max-width:640px){
+  .pipe-node{grid-template-columns:30px 1fr;padding:14px 14px;gap:10px;}
+  .pipe-node > .tag{grid-column:2;justify-self:start;}
+}
+@media (prefers-reduced-motion: reduce){ .pipe-node{opacity:1;transition:none;} }
+.legend{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 24px;}
+.legend li{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.legend .lg{font-size:13px;color:var(--steel-soft);}
+
+/* tech cards */
+.dev-card .evidence{margin:auto 0 0;padding-top:12px;border-top:1px solid var(--line);font-family:var(--font-mono);font-size:11.5px;color:var(--steel-soft);}
+.dev-grid{margin-bottom:0;}
+
+/* control station */
+.cs-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start;}
+@media (max-width:900px){ .cs-layout{grid-template-columns:1fr;} }
+.cs-layout > *{min-width:0;}
+.cs-dirs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+@media (max-width:560px){ .cs-dirs{grid-template-columns:1fr;} }
+.cs-dirs li:last-child:nth-child(odd){grid-column:1 / -1;}
+.cs-dirs li{background:var(--panel);padding:12px 14px 12px 28px;font-size:14px;color:var(--off);position:relative;}
+.cs-dirs li::before{content:'';position:absolute;left:12px;top:19px;width:6px;height:6px;background:var(--cyber);transform:rotate(45deg);}
+.cs-modes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;}
+@media (max-width:560px){ .cs-modes{grid-template-columns:1fr;} }
+.cs-mode{background:var(--panel);border:1px solid var(--line);clip-path:var(--edge);padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;min-width:0;}
+.cs-mode h3{font-size:16px;text-transform:uppercase;letter-spacing:.03em;}
+.cs-mode p{margin:0;font-size:14px;color:var(--off);}
+.cs-visual{margin:0;border:1px solid var(--line);clip-path:var(--edge);background:var(--charcoal-2);padding:16px;}
+.cs-visual-head{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;font-size:10.5px;letter-spacing:.08em;color:var(--steel-soft);margin-bottom:14px;}
+.wf{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.wf-box{border:1px dashed rgba(0,224,255,.35);padding:12px;min-height:84px;display:flex;flex-direction:column;gap:8px;background:rgba(0,224,255,.03);}
+.wf-box.wide{grid-column:1 / -1;}
+.wf-k{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyber);}
+.wf-bar{display:block;height:6px;background:var(--line);width:100%;}
+.wf-bar.s{width:55%;}
+.cs-visual figcaption{margin-top:14px;font-size:12.5px;color:var(--steel-soft);line-height:1.5;}
+
+/* engineering updates */
+.updates-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px;max-width:860px;}
+.upd,.upd-empty{background:var(--panel);border:1px solid var(--line);clip-path:var(--edge);padding:22px 24px;}
+.upd-empty{color:var(--steel-soft);}
+.upd-head{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-bottom:10px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;}
+.upd-date{color:var(--cyber);}
+.upd-cat{color:var(--steel-soft);border:1px solid var(--line);padding:2px 8px;}
+.upd h3{font-size:20px;margin-bottom:8px;}
+.upd p{margin:0 0 14px;font-size:15px;color:var(--off);max-width:62ch;}
+.upd-foot{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;}
+.upd-link{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyber);border-bottom:1px solid var(--cyber-dim);}
+
+/* roadmap */
+.rm-list{list-style:none;margin:0 0 44px;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);max-width:860px;}
+.rm-row{display:grid;grid-template-columns:40px 1fr auto;gap:16px;align-items:center;background:var(--panel);padding:16px 20px;}
+.rm-n{color:var(--cyber);font-size:12px;}
+.rm-name{font-size:16px;color:var(--white);min-width:0;}
+@media (max-width:640px){
+  .rm-row{grid-template-columns:30px 1fr;gap:10px;padding:14px;}
+  .rm-row > .tag{grid-column:2;justify-self:start;}
+}
+ul.status-list.maturity{margin-top:48px;max-width:860px;}
+.maturity li{align-items:flex-start;}
+.maturity .label{flex:1 1 320px;min-width:0;}
+
+/* safety / team / investment details */
+.safety-col .col-note{margin:14px 0 0;font-size:13px;color:var(--amber);}
+.cto-card{margin-top:24px;border:1px solid var(--cyber-dim);clip-path:var(--edge);background:linear-gradient(135deg,rgba(0,224,255,.05),transparent 60%),var(--panel);padding:30px;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between;}
+.cto-card > *{min-width:0;}
+.cto-card > div{flex:1 1 420px;}
+.cto-card h3{font-size:22px;margin-bottom:10px;text-transform:uppercase;}
+.cto-card p{margin:0 0 10px;font-size:15px;color:var(--off);max-width:62ch;}
+.invest-wrap .body-copy{margin-top:8px;}
+
 /* ============================================================
    TEAM / FOUNDER
    ============================================================ */
@@ -1188,6 +1354,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link t" data-ru="Перейти к содержимому">Skip to content</a>
 
 <div id="grain" aria-hidden="true"></div>
 <div id="vignette" aria-hidden="true"></div>
@@ -1216,13 +1383,14 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     </a>
     <nav>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#problem" class="t" data-ru="Проблема">Problem</a></li>
-        <li><a href="#solution" class="t" data-ru="Решение">Solution</a></li>
         <li><a href="#technology" class="t" data-ru="Технологии">Technology</a></li>
-        <li><a href="#roadmap" class="t" data-ru="Статус">Status</a></li>
+        <li><a href="#progress" class="t" data-ru="Прогресс">Progress</a></li>
+        <li><a href="#control-station" class="t" data-ru="Станция управления">Control Station</a></li>
+        <li><a href="#roadmap" class="t" data-ru="План">Roadmap</a></li>
+        <li><a href="#safety" class="t" data-ru="Безопасность">Safety</a></li>
         <li><a href="#team" class="t" data-ru="Команда">Team</a></li>
         <li><a href="#investment" class="t" data-ru="Инвестиции">Investment</a></li>
-        <li><a href="#contact" class="t" data-ru="Контакты">Contact</a></li>
+        <li class="nav-mobile-only"><a href="#contact" class="t" data-ru="Контакты">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-right">
@@ -1230,7 +1398,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
         <button type="button" id="langEn" class="active" aria-pressed="true">EN</button>
         <button type="button" id="langRu" aria-pressed="false">RU</button>
       </div>
-      <a href="#contact" class="btn btn-primary nav-cta t" data-ru="Скачать презентацию">Request Deck</a>
+      <a href="#contact" class="btn btn-primary nav-cta t" data-ru="Презентация для инвесторов">Investor Deck</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="1.6"/></svg>
       </button>
@@ -1239,113 +1407,103 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
 </header>
 
 <aside id="opConsole" aria-hidden="true">
-  <button type="button" id="opConsoleToggle" aria-label="Toggle operator console">
-    <span class="rec-dot"></span><span class="mono">OPS</span>
+  <button type="button" id="opConsoleToggle" aria-label="Toggle demo console">
+    <span class="rec-dot"></span><span class="mono">DEMO</span>
   </button>
   <div id="opConsoleBody">
     <div class="opc-row">
-      <span class="opc-k mono">MISSION CLOCK</span>
+      <span class="opc-k mono">SESSION CLOCK</span>
       <span class="opc-v mono" id="missionClock">00:00:00</span>
     </div>
     <div class="opc-row">
-      <span class="opc-k mono">UNIT BATTERY</span>
-      <span class="opc-v mono" id="opBattery">98%</span>
+      <span class="opc-k mono">MODE</span>
+      <span class="opc-v mono">SIMULATION</span>
     </div>
     <div class="opc-row">
       <span class="opc-k mono">FEED</span>
-      <span class="opc-v mono cyber-live"><span class="rec-dot"></span> LIVE</span>
+      <span class="opc-v mono">DEMO · NOT LIVE</span>
     </div>
-    <div class="opc-log" id="opLog" aria-live="polite"></div>
+    <div class="opc-log" id="opLog" aria-live="off"></div>
   </div>
 </aside>
 
-<main id="top">
+<main id="main"><span id="top"></span>
 
 <!-- ================= HERO ================= -->
-<section id="hero">
+<section id="hero" aria-labelledby="heroTitle">
   <div class="grid-bg" aria-hidden="true"></div>
   <div class="scanline" aria-hidden="true"></div>
   <div class="sweep-line" aria-hidden="true"></div>
   <img src="assets/symbol.png" class="hero-symbol" id="heroSymbol" alt="" aria-hidden="true">
 
   <div class="video-panel" id="videoPanel">
-    <video id="interceptVideo" autoplay muted loop playsinline preload="auto" poster="assets/intercept-poster.jpg">
+    <video id="interceptVideo" autoplay muted loop playsinline preload="metadata" poster="assets/intercept-poster.jpg" aria-label="Recorded aerial footage with a simulated tracking overlay (concept visualization)">
       <source src="assets/intercept.webm" type="video/webm">
       <source src="assets/intercept.mp4" type="video/mp4">
     </video>
     <div class="tint" aria-hidden="true"></div>
     <div class="grade" aria-hidden="true"></div>
     <div class="frame-corners" aria-hidden="true"><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></div>
-    <div class="feed-label"><span class="dot"></span><span class="t" data-ru="ДРОН-01 · КАНАЛ EO">UNIT-01 · EO FEED</span></div>
-    <div class="feed-zone mono t" data-ru="СЕКТОР 04-B">SECTOR 04-B</div>
-    <div class="vreticle" id="vReticle" role="button" tabindex="0" aria-label="Lock onto vehicle">
+    <div class="feed-label"><span class="t" data-ru="ДЕМО-КАНАЛ · ЗАПИСАННОЕ ВИДЕО">DEMO FEED · RECORDED VIDEO</span></div>
+    <div class="sim-badge mono"><span class="t" data-ru="СИМУЛЯЦИЯ ИНТЕРФЕЙСА">SIMULATED INTERFACE</span></div>
+    <div class="vreticle" id="vReticle" role="button" tabindex="0" aria-label="Show simulated track card">
       <i></i><i></i><i></i><i></i>
       <div class="vlabel mono" id="vReticleLabel"></div>
     </div>
     <div class="vp-telemetry mono" aria-hidden="true">
-      <div class="vt-item"><span class="t" data-ru="КООРД">COORD</span><b id="vpCoord">41.71°N 74.02°W</b></div>
-      <div class="vt-item"><span class="t" data-ru="ВЕТЕР">WIND</span><b id="vpWind">6 KT</b></div>
-      <div class="vt-item"><span class="t" data-ru="ВЛАЖН">HUM</span><b id="vpHum">54%</b></div>
+      <div class="vt-item"><span class="t" data-ru="КАДР X">FRAME X</span><b id="vpX">--</b></div>
+      <div class="vt-item"><span class="t" data-ru="КАДР Y">FRAME Y</span><b id="vpY">--</b></div>
+      <div class="vt-item"><span class="t" data-ru="ВРЕМЯ КЛИПА">CLIP TIME</span><b id="vpT">0.0 s</b></div>
     </div>
-    <div class="compass" aria-hidden="true">
-      <span class="n">N</span>
-      <div class="needle" id="vpNeedle"></div>
-      <span class="heading-val mono" id="vpHeading">042°</span>
-    </div>
+    <div class="vp-caption mono"><span class="t" data-ru="Концептуальная визуализация. Не реальная операция БПЛА.">Concept visualization. Not a live UAV operation.</span></div>
   </div>
 
-  <div class="dossier" id="dossier">
+  <div class="dossier" id="dossier" role="dialog" aria-label="Simulated track card">
     <div class="dossier-head">
-      <span class="t" data-ru="ПЕРЕХВАТ ТС">Vehicle Intercept</span>
+      <span class="t" data-ru="КАРТОЧКА ЦЕЛИ · СИМУЛЯЦИЯ">TRACK CARD · SIMULATED</span>
       <button type="button" class="dossier-close" id="dossierClose" aria-label="Close">×</button>
     </div>
     <div class="dossier-body">
-      <div class="dossier-photo">
-        <svg viewBox="0 0 70 88" aria-hidden="true">
-          <rect width="70" height="88" fill="#14161A"/>
-          <circle cx="35" cy="32" r="14" fill="#2A2E34"/>
-          <path d="M13 82c2-16 12-24 22-24s20 8 22 24" fill="#2A2E34"/>
-        </svg>
-        <span class="scan-label mono t" data-ru="СОВПАД. 78%">DB MATCH 78%</span>
-      </div>
       <div class="dossier-info">
-        <div class="di-row"><span class="di-k mono t" data-ru="СУБЪЕКТ">SUBJECT</span><span class="di-v" id="subjName">Ethan Marlowe</span></div>
-        <div class="di-row"><span class="di-k mono t" data-ru="НОМЕР">PLATE</span><span class="di-v mono" id="subjPlate">RC-7742-KX</span></div>
-        <div class="di-row"><span class="di-k mono t" data-ru="TRACK ID">TRACK ID</span><span class="di-v mono" id="subjTrack">TRK-2299</span></div>
-        <div class="di-row"><span class="di-k mono t" data-ru="КООРДИНАТЫ">COORDS</span><span class="di-v mono" id="subjCoords">41.7183°N 74.0041°W</span></div>
-        <div class="di-row"><span class="di-k mono t" data-ru="ВРЕМЯ ПОГОНИ">PURSUIT TIME</span><span class="di-v mono" id="subjPursuit">00:00</span></div>
-        <div class="di-row"><span class="di-k mono t" data-ru="ПРОГНОЗ. КУРС">PREDICTED HEADING</span><span class="di-v mono" id="subjPredicted">NE · 042°</span></div>
-        <div class="di-row"><span class="di-k mono t" data-ru="СТАТУС">STATUS</span><span class="di-v amber mono t" id="subjStatus" data-ru="СОПРОВОЖДЕНИЕ">TRACKING</span></div>
+        <div class="di-row"><span class="di-k mono"><span class="t" data-ru="ЦЕЛЬ">TARGET</span></span><span class="di-v mono"><span class="t" data-ru="Автомобиль (записанное видео)">Vehicle (recorded video)</span></span></div>
+        <div class="di-row"><span class="di-k mono"><span class="t" data-ru="ID ТРЕКА">TRACK ID</span></span><span class="di-v mono">SIM-01</span></div>
+        <div class="di-row"><span class="di-k mono"><span class="t" data-ru="ПОЛОЖЕНИЕ В КАДРЕ">FRAME POSITION</span></span><span class="di-v mono" id="subjFrame">--</span></div>
+        <div class="di-row"><span class="di-k mono"><span class="t" data-ru="ВРЕМЯ СОПРОВОЖДЕНИЯ">TRACK TIME</span></span><span class="di-v mono" id="subjPursuit">00:00</span></div>
+        <div class="di-row"><span class="di-k mono"><span class="t" data-ru="СОСТОЯНИЕ">STATE</span></span><span class="di-v amber mono"><span class="t" data-ru="СОПРОВОЖДЕНИЕ (ДЕМО-НАЛОЖЕНИЕ)">TRACKING (DEMO OVERLAY)</span></span></div>
+        <p class="di-note"><span class="t" data-ru="Иллюстративный интерфейс. Без персональных данных, без сверки с базами и без реальной телеметрии.">Illustrative interface. No personal data, no database match, no live telemetry.</span></p>
       </div>
     </div>
   </div>
 
-  <div class="rec-indicator mono" aria-hidden="true"><span class="rec-dot"></span><span class="t" data-ru="ЭФИР">LIVE</span> <span id="heroTimecode">00:00:00:00</span></div>
+  <div class="rec-indicator mono" aria-hidden="true"><span class="rec-dot"></span><span class="t" data-ru="СИМУЛЯЦИЯ">SIMULATION</span> <span id="heroTimecode">00:00:00:00</span></div>
 
   <div class="hero-content">
     <div class="hero-status-row">
-      <span class="tag status-active"><span class="dot"></span><span class="t" data-ru="Система активна">System Online</span></span>
-      <span class="tag status-active"><span class="dot"></span><span class="t" data-ru="ИИ-зрение активно">AI Vision Active</span></span>
-      <span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="В процессе">In Progress</span></span>
+      <span class="tag st-stage"><span class="dot"></span><span class="t" data-ru="ИССЛЕДОВАНИЯ И РАЗРАБОТКА · PRE-SEED">RESEARCH &amp; DEVELOPMENT · PRE-SEED</span></span>
+      <span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="СИМУЛЯЦИЯ ИНТЕРФЕЙСА">SIMULATED INTERFACE</span></span>
       <span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Открытая вакансия: CTO">Open Role: CTO</span></span>
     </div>
 
-    <h1 class="glitch-in t" data-ru="Автономные ИИ-дроны безопасности для круглосуточной защиты">Autonomous AI Security Drones for 24/7 Protection</h1>
-    <p class="lede t" data-ru="RazorClaw Systems объединяет передовое компьютерное зрение с промышленными дронами, чтобы предотвращать вторжения до их эскалации.">RazorClaw Systems combines advanced computer vision with enterprise drones to prevent intrusions before they escalate.</p>
+    <h1 id="heroTitle" class="glitch-in t" data-ru="Автономная воздушная аналитика и сопровождение целей">Autonomous Aerial Intelligence &amp; Target Tracking</h1>
+    <p class="t lede" data-ru="Создаём программный интеллектуальный слой для автономных систем безопасности и воздушного мониторинга следующего поколения.">Building the software intelligence layer for next-generation autonomous security and aerial monitoring systems.</p>
+    <p class="t hero-desc" data-ru="RazorClaw Systems разрабатывает программное обеспечение для компьютерного зрения, сопровождения целей, повторного захвата и управления миссиями для будущих автономных воздушных систем безопасности. Сейчас мы сосредоточены на исследовательских прототипах, проверке на записанном видео и специальной платформе оператора.">RazorClaw Systems develops computer vision, target tracking, reacquisition and mission-control software for future autonomous aerial security applications. Our current work focuses on research prototypes, recorded-video validation and a dedicated operator control platform.</p>
+    <p class="t hero-stage-note" data-ru="Программные прототипы находятся в активной разработке. Интегрированная полевая проверка с БПЛА запланирована.">Software prototypes under active development. Integrated UAV field validation is planned.</p>
 
     <div class="hero-ctas">
-      <a href="#contact" class="btn btn-primary t" data-ru="Скачать презентацию (PDF)">Download Pitch Deck (PDF)</a>
-      <a href="#technology" class="btn btn-secondary t" data-ru="Узнать больше">Learn More</a>
+      <a href="#technology" class="btn btn-primary t" data-ru="Изучить технологии">Explore Our Technology</a>
+      <a href="#contact" class="btn btn-secondary t" data-ru="Запросить презентацию для инвесторов">Request Investor Deck</a>
+      <a href="#updates" class="hero-link t" data-ru="Инженерные обновления →">View Engineering Updates →</a>
     </div>
 
-    <div class="hud-strip mono" aria-hidden="true">
-      <div class="hud-cell"><span class="k">GPS</span><span class="v">41.71°N 74.02°W</span></div>
-      <div class="hud-cell"><span class="k">ALT</span><span class="v">118 M</span></div>
-      <div class="hud-cell"><span class="k">BATTERY</span><span class="v">86%</span></div>
-      <div class="hud-cell"><span class="k">SIGNAL</span><span class="v">▮▮▮▮▯</span></div>
-      <div class="hud-cell"><span class="k">CAMERA</span><span class="v">RGB / IR</span></div>
-      <div class="hud-cell"><span class="k">MISSION</span><span class="v">PATROL</span></div>
+    <div class="hud-strip mono" aria-label="Project stage summary">
+      <div class="hud-cell"><span class="k"><span class="t" data-ru="СТАДИЯ">STAGE</span></span><span class="v">R&amp;D</span></div>
+      <div class="hud-cell"><span class="k"><span class="t" data-ru="ВХОД">INPUT</span></span><span class="v"><span class="t" data-ru="ЗАПИСЬ">RECORDED VIDEO</span></span></div>
+      <div class="hud-cell"><span class="k"><span class="t" data-ru="РЕЖИМ">MODE</span></span><span class="v"><span class="t" data-ru="СИМУЛЯЦИЯ">SIMULATION</span></span></div>
+      <div class="hud-cell"><span class="k"><span class="t" data-ru="СВЯЗЬ С БПЛА">UAV LINK</span></span><span class="v"><span class="t" data-ru="НЕТ">NONE</span></span></div>
+      <div class="hud-cell"><span class="k"><span class="t" data-ru="КОМАНДЫ НА HW">HW COMMANDS</span></span><span class="v"><span class="t" data-ru="НЕТ">NONE</span></span></div>
+      <div class="hud-cell"><span class="k"><span class="t" data-ru="ПОЛЕВЫЕ ИСП.">FIELD TESTS</span></span><span class="v"><span class="t" data-ru="ПЛАН">PLANNED</span></span></div>
     </div>
+    <p class="sim-note mono"><span class="g" aria-hidden="true">◆</span> <span class="t" data-ru="Концептуальная визуализация. Не реальная операция БПЛА.">Concept visualization. Not a live UAV operation.</span></p>
   </div>
 
   <div class="scroll-cue" aria-hidden="true">
@@ -1354,17 +1512,22 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
   </div>
 </section>
 
-<!-- ================= PROBLEM ================= -->
+<!-- ================= PROBLEM & OPPORTUNITY ================= -->
 <section id="problem" class="section">
+  <span id="why-now" class="anchor-alias"></span>
   <div class="container">
-    <div class="eyebrow"><span class="num">01</span><span class="t" data-ru="Проблема">Problem</span></div>
+    <div class="eyebrow"><span class="num">02</span><span class="t" data-ru="Проблема и возможность">Problem &amp; Opportunity</span></div>
     <div class="split">
+      <div><h2 class="t" data-ru="Службам безопасности нужна более совершенная воздушная аналитика">Security Operations Need Better Aerial Intelligence</h2></div>
       <div>
-        <h2 class="t" data-ru="Слепая зона традиционной охраны">The Blind Spot in Traditional Security</h2>
+        <p class="t body-copy" data-ru="Традиционные системы мониторинга ограничены в обзоре, непрерывности наблюдения и своевременной интерпретации сложных сцен.">Traditional monitoring systems face limitations in visibility, continuity of observation and timely interpretation of complex scenes.</p>
+        <p class="t body-copy" data-ru="Воздушные платформы могут расширить покрытие, но сохранение надёжной идентичности цели, восстановление после временной потери видимости и подача оператору полезной информации остаются серьёзными инженерными задачами." style="margin-top:16px">Aerial platforms can provide additional coverage, but maintaining reliable target identity, recovering from temporary visibility loss and presenting actionable information to operators remain significant engineering challenges.</p>
       </div>
-      <div>
-        <p class="body-copy t" data-ru="Традиционная охрана не обеспечивает непрерывного покрытия, быстрого реагирования и аналитики в реальном времени. Усталость персонала и слепые зоны приводят к пропущенным инцидентам и растущим издержкам.">Traditional security lacks continuous coverage, rapid response, and real-time analytics. Human fatigue and blind spots lead to missed incidents and rising costs.</p>
-      </div>
+    </div>
+    <div class="modules" style="margin-top:44px">
+      <div class="module"><div class="m-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.4"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="t" data-ru="Непрерывность сопровождения">Continuity of Tracking</h3><p class="t" data-ru="Сохранение идентичности цели при прерывании детекций или смене ID трекера.">Maintaining target identity when detections are interrupted or tracker IDs change.</p></div>
+      <div class="module"><div class="m-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="1" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M7 3v3M17 3v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div><h3 class="t" data-ru="Оперативная осведомлённость">Operational Awareness</h3><p class="t" data-ru="Преобразование визуальных детекций и событий сопровождения в информацию, понятную оператору.">Transforming visual detections and tracking events into information operators can understand.</p></div>
+      <div class="module"><div class="m-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-6 4 4 8-9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="t" data-ru="Системная интеграция">System Integration</h3><p class="t" data-ru="Связывание компьютерного зрения, среды выполнения миссий, интерфейсов мониторинга и будущих платформ БПЛА.">Connecting computer vision, mission runtime, monitoring interfaces and future UAV platforms.</p></div>
     </div>
   </div>
 </section>
@@ -1372,18 +1535,37 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
 <!-- ================= SOLUTION ================= -->
 <section id="solution" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">02</span><span class="t" data-ru="Решение">Solution</span></div>
+    <div class="eyebrow"><span class="num">03</span><span class="t" data-ru="Наше решение">Our Solution</span></div>
     <div class="split">
       <div>
-        <h2 class="t" data-ru="Автономное патрулирование. Непрерывное покрытие.">Autonomous Patrol. Continuous Coverage.</h2>
-        <p class="body-copy t" style="margin-top:20px" data-ru="RazorClaw Systems развёртывает автономные патрульные дроны с ИИ-детекцией, чтобы выявлять риски на ранней стадии, сдерживать нарушителей и передавать оповещения операторам — сокращая время реагирования и совокупную стоимость владения.">RazorClaw Systems deploys autonomous patrol drones with AI detection to identify risks early, deter intruders, and stream alerts to operators — reducing response time and total cost of ownership.</p>
+        <h2 class="t" data-ru="Программный интеллектуальный слой для воздушного мониторинга">A Software Intelligence Layer for Aerial Monitoring</h2>
+        <p class="t body-copy" data-ru="RazorClaw Systems разрабатывает модульную программную платформу, объединяющую детекцию объектов, сопровождение физической цели, повторный захват, управление состоянием поиска и визуализацию для оператора." style="margin-top:20px">RazorClaw Systems is developing a modular software platform combining object detection, physical target tracking, target reacquisition, search-state management and operator visualization.</p>
       </div>
     </div>
-
+    <div class="pipe-wrap reveal" id="archWrap">
+      <h3 class="sub-head"><span class="t" data-ru="Архитектура платформы">Platform architecture</span></h3>
+      <ol class="pipe" id="arch">
+        <li class="pipe-node pn-sim"><span class="pn-idx mono">01</span><div class="pn-body"><h3 class="t" data-ru="Записанное видео / будущий вход с камеры">Recorded Video / Future Camera Input</h3><span class="pn-note"><span class="t" data-ru="Сегодня — записанное видео; вход с живой камеры запланирован.">Recorded video today; live camera input is planned.</span></span></div><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Текущие R&amp;D">Current R&amp;D</span></span></li>
+        <li class="pipe-node pn-sim"><span class="pn-idx mono">02</span><div class="pn-body"><h3 class="t" data-ru="Компьютерное зрение и детекция">Computer Vision &amp; Detection</h3></div><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Текущие R&amp;D">Current R&amp;D</span></span></li>
+        <li class="pipe-node pn-sim"><span class="pn-idx mono">03</span><div class="pn-body"><h3 class="t" data-ru="Сопровождение и идентичность физической цели">Tracking &amp; Physical Target Identity</h3></div><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Текущие R&amp;D">Current R&amp;D</span></span></li>
+        <li class="pipe-node pn-sim"><span class="pn-idx mono">04</span><div class="pn-body"><h3 class="t" data-ru="Повторный захват и логика поиска">Reacquisition &amp; Search Logic</h3></div><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Текущие R&amp;D">Current R&amp;D</span></span></li>
+        <li class="pipe-node pn-dev"><span class="pn-idx mono">05</span><div class="pn-body"><h3 class="t" data-ru="Среда выполнения и обработка событий">Runtime &amp; Event Processing</h3></div><span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="В разработке">Under Development</span></span></li>
+        <li class="pipe-node pn-dev"><span class="pn-idx mono">06</span><div class="pn-body"><h3 class="t" data-ru="Станция управления RazorClaw">RazorClaw Control Station</h3></div><span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="В разработке">Under Development</span></span></li>
+        <li class="pipe-node pn-dev"><span class="pn-idx mono">07</span><div class="pn-body"><h3 class="t" data-ru="Просмотр оператором и диагностика">Operator Review &amp; Diagnostics</h3></div><span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="В разработке">Under Development</span></span></li>
+        <li class="pipe-node pn-plan"><span class="pn-idx mono">08</span><div class="pn-body"><h3 class="t" data-ru="Интеграция с БПЛА и контролируемые полевые испытания">UAV Integration &amp; Controlled Field Testing</h3><span class="pn-note"><span class="t" data-ru="Ещё не начато. Аппаратная интеграция не показана как завершённая.">Not started. Hardware integration is not shown as complete.</span></span></div><span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Запланировано">Planned</span></span></li>
+      </ol>
+      <ul class="legend" aria-label="Legend">
+        <li><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Текущие R&amp;D">Current R&amp;D</span></span> <span class="t lg" data-ru="программные компоненты, работа с записанным видео">software components, recorded-video work</span></li>
+        <li><span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="В разработке">Under Development</span></span> <span class="t lg" data-ru="полная программная интеграция">full software integration</span></li>
+        <li><span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Запланировано">Planned</span></span> <span class="t lg" data-ru="интеграция с БПЛА, контролируемые полевые испытания">UAV integration, controlled field trials</span></li>
+      </ul>
+    </div>
+    <div style="height:56px"></div>
+    <h3 class="sub-head"><span class="t" data-ru="Концептуальная симуляция (иллюстрация, не реальная работа)">Concept simulation (illustrative, not live)</span></h3>
     <div class="intercept reveal" id="intercept">
       <div class="intercept-head">
-        <span class="tag status-active"><span class="dot"></span><span class="t" data-ru="Симуляция патруля в реальном времени">Live Patrol Simulation</span></span>
-        <span class="intercept-zone mono t" data-ru="ЗОНА: СЕВЕРНЫЙ ПЕРИМЕТР">ZONE: PERIMETER-NORTH</span>
+        <span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="Концептуальная симуляция — не реальная операция">Concept Simulation — Not a Live Operation</span></span>
+        <span class="intercept-zone mono t" data-ru="АБСТРАКТНАЯ СЕТКА · СИМУЛЯЦИЯ">ABSTRACT GRID · SIMULATED</span>
       </div>
       <div class="intercept-grid">
         <div class="radar-col">
@@ -1399,282 +1581,361 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
             <div class="center-dot"></div>
           </div>
           <div class="radar-readout">
-            <div class="rr-line"><span class="t" data-ru="Активный юнит">Active Unit</span><b>RCS-04</b></div>
-            <div class="rr-line"><span class="t" data-ru="Объекты в зоне">Objects Tracked</span><b id="objCount">0</b></div>
-            <div class="rr-line"><span class="t" data-ru="Режим">Mode</span><b class="t" data-ru="Автономный" id="radarMode">Autonomous</b></div>
+            <div class="rr-line"><span class="t" data-ru="Источник">Source</span><b class="t" data-ru="СИМ.">SIM</b></div>
+            <div class="rr-line"><span class="t" data-ru="Объекты в кадре">Objects in Frame</span><b id="objCount">0</b></div>
+            <div class="rr-line"><span class="t" data-ru="Режим">Mode</span><b class="t" data-ru="Симуляция" id="radarMode">Simulation</b></div>
           </div>
-          <div class="radar-status mono" id="radarStatus"><span class="t" data-ru="Сканирование периметра...">Scanning perimeter…</span><span class="cursor-blink"></span></div>
+          <div class="radar-status mono" id="radarStatus"><span class="t" data-ru="Анализ кадра...">Analyzing frame…</span><span class="cursor-blink"></span></div>
         </div>
         <div class="flow" id="flow">
-          <div class="flow-step" data-i="0"><span class="idx mono">01</span><span class="name t" data-ru="Патрулирование">Patrol</span><span class="bar"><i></i></span></div>
-          <div class="flow-step" data-i="1"><span class="idx mono">02</span><span class="name t" data-ru="Обнаружение">Detect</span><span class="bar"><i></i></span></div>
-          <div class="flow-step" data-i="2"><span class="idx mono">03</span><span class="name t" data-ru="Сопровождение">Track</span><span class="bar"><i></i></span></div>
-          <div class="flow-step" data-i="3"><span class="idx mono">04</span><span class="name t" data-ru="Оповещение">Alert</span><span class="bar"><i></i></span></div>
-          <div class="flow-step" data-i="4"><span class="idx mono">05</span><span class="name t" data-ru="Оператор">Operator</span><span class="bar"><i></i></span></div>
+          <div class="flow-step" data-i="0"><span class="idx mono">01</span><span class="name t" data-ru="Детекция">Detect</span><span class="bar"><i></i></span></div>
+          <div class="flow-step" data-i="1"><span class="idx mono">02</span><span class="name t" data-ru="Сопровождение">Track</span><span class="bar"><i></i></span></div>
+          <div class="flow-step" data-i="2"><span class="idx mono">03</span><span class="name t" data-ru="Потеря видимости">Visibility Loss</span><span class="bar"><i></i></span></div>
+          <div class="flow-step" data-i="3"><span class="idx mono">04</span><span class="name t" data-ru="Поиск">Search</span><span class="bar"><i></i></span></div>
+          <div class="flow-step" data-i="4"><span class="idx mono">05</span><span class="name t" data-ru="Повторный захват">Reacquire</span><span class="bar"><i></i></span></div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ================= WHY NOW ================= -->
-<section id="why-now" class="section">
-  <div class="container">
-    <div class="eyebrow"><span class="num">03</span><span class="t" data-ru="Почему сейчас">Why Now</span></div>
-    <div class="section-head">
-      <h2 class="t" data-ru="Почему сейчас">Why Now</h2>
-    </div>
-    <div class="modules">
-      <div class="module">
-        <div class="m-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.4"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3 class="t" data-ru="Зрелые промышленные дроны">Mature Enterprise Drones</h3>
-        <p class="t" data-ru="Оборудование класса DJI Enterprise Matrice 30T обеспечивает надёжное патрулирование в любую погоду.">DJI Enterprise Matrice 30T-class hardware enables reliable all-weather patrols.</p>
-      </div>
-      <div class="module">
-        <div class="m-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="1" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M7 3v3M17 3v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-        <h3 class="t" data-ru="ИИ на устройстве">On-Device AI</h3>
-        <p class="t" data-ru="Эффективные модели компьютерного зрения теперь работают на периферии — быстрее и безопаснее.">Efficient computer vision models now run at the edge for faster, safer decisions.</p>
-      </div>
-      <div class="module">
-        <div class="m-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-6 4 4 8-9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3 class="t" data-ru="Операционное давление">Operational Pressure</h3>
-        <p class="t" data-ru="Службы безопасности сталкиваются с нехваткой персонала и ростом издержек — автоматизация умножает покрытие.">Security teams face labor shortages and rising costs — automation multiplies coverage.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TECHNOLOGY ================= -->
+<!-- ================= CORE TECHNOLOGY ================= -->
 <section id="technology" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">04</span><span class="t" data-ru="Технологии">Technology</span></div>
+    <div class="eyebrow"><span class="num">04</span><span class="t" data-ru="Ключевые технологии">Core Technology</span></div>
     <div class="section-head">
-      <h2 class="t" data-ru="Архитектура системы">System Architecture</h2>
+      <h2 class="t" data-ru="Технологии и ход разработки">Technology &amp; Development Progress</h2>
+      <p class="t" data-ru="Пять технических направлений. Каждый статус описывает то, что реально продемонстрировано, а не то, что планируется.">Five technical directions. Each status describes what has actually been demonstrated, not what is intended.</p>
     </div>
-    <div class="tech-layout">
-      <div>
-        <h3 style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel-soft);font-family:var(--font-mono);font-weight:500;margin-bottom:14px;" class="t" data-ru="Стек">Stack</h3>
-        <ul class="stack-list">
-          <li><span class="n">01</span><span class="t" data-ru="Платформа DJI Enterprise Matrice 30T">DJI Enterprise Matrice 30T platform</span></li>
-          <li><span class="n">02</span><span class="t" data-ru="Автономная навигация + дистанционная беспроводная зарядка">Autonomous navigation + remote wireless charging</span></li>
-          <li><span class="n">03</span><span class="t" data-ru="Периферийный ИИ (зрение) для обнаружения и сопровождения">Edge AI (vision) for detection &amp; tracking</span></li>
-          <li><span class="n">04</span><span class="t" data-ru="Защищённое приложение для оповещений, проверки и эскалации">Secure app for alerts, review and escalation</span></li>
-          <li><span class="n">05</span><span class="t" data-ru="Несмертельная система сдерживания (баллон с перцовым аэрозолем)">Non-lethal deterrent payload (pepper-spray canister)</span></li>
-        </ul>
+    <div class="metric-grid dev-grid">
+      <div class="metric-card dev-card">
+        <div class="mc-head"><h3 class="t" data-ru="Компьютерное зрение и сопровождение объектов">Computer Vision &amp; Object Tracking</h3></div>
+        <span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="Прототип R&amp;D">R&amp;D Prototype</span></span>
+        <p class="t" data-ru="Исследование детекции объектов и многообъектного сопровождения на записанном видео.">Object detection and multi-object tracking research using recorded-video inputs.</p>
+        <p class="evidence"><span class="t" data-ru="Подтверждающие материалы: ожидают публикации">Supporting material: pending publication</span></p>
       </div>
-      <div class="reveal" id="archWrap">
-        <div class="arch" id="arch">
-          <div class="arch-node" data-i="0 t" data-ru="ПЛАТФОРМА БПЛА">UAV Platform</div>
-          <div class="arch-connector" data-i="0"><i></i><span class="pulse"></span></div>
-          <div class="arch-node" data-i="1" data-ru="ПЕРИФЕРИЙНЫЙ ИИ">Edge AI</div>
-          <div class="arch-connector" data-i="1"><i></i><span class="pulse"></span></div>
-          <div class="arch-node" data-i="2" data-ru="ОБНАРУЖЕНИЕ / СОПРОВОЖДЕНИЕ">Detection / Tracking</div>
-          <div class="arch-connector" data-i="2"><i></i><span class="pulse"></span></div>
-          <div class="arch-node" data-i="3" data-ru="ЗАЩИЩЁННАЯ СИСТЕМА УПРАВЛЕНИЯ">Secure Control System</div>
-          <div class="arch-connector" data-i="3"><i></i><span class="pulse"></span></div>
-          <div class="arch-node" data-i="4" data-ru="ОПЕРАТОР">Operator</div>
+      <div class="metric-card dev-card">
+        <div class="mc-head"><h3 class="t" data-ru="Идентичность физической цели">Physical Target Identity</h3></div>
+        <span class="tag st st-done"><span class="g" aria-hidden="true">✓</span><span class="t" data-ru="Продемонстрировано в контролируемых тестах">Demonstrated in Controlled Tests</span></span>
+        <p class="t" data-ru="Исследование сохранения единой идентичности физической цели при смене отдельных ID трекера.">Research into maintaining a consistent physical target identity when individual tracker IDs change.</p>
+        <p class="evidence"><span class="t" data-ru="Подтверждающие материалы: ожидают публикации">Supporting material: pending publication</span></p>
+      </div>
+      <div class="metric-card dev-card">
+        <div class="mc-head"><h3 class="t" data-ru="Повторный захват цели">Target Reacquisition</h3></div>
+        <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Синтетическая проверка">Synthetic Validation</span></span>
+        <p class="t" data-ru="Контролируемые тестовые сценарии показали повторный захват цели после временной потери видимости.">Controlled test scenarios have demonstrated target reacquisition after temporary loss of visibility.</p>
+        <p class="evidence"><span class="t" data-ru="Подтверждающие материалы: ожидают публикации">Supporting material: pending publication</span></p>
+      </div>
+      <div class="metric-card dev-card">
+        <div class="mc-head"><h3 class="t" data-ru="Поиск и моделирование неопределённости">Search &amp; Uncertainty Modeling</h3></div>
+        <span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="Исследовательский прототип">Research Prototype</span></span>
+        <p class="t" data-ru="Переходы состояний поиска, оценка уверенности вне кадра и логика мониторинга с учётом неопределённости.">Search-state transitions, off-screen confidence estimation and uncertainty-aware monitoring logic.</p>
+        <p class="evidence"><span class="t" data-ru="Подтверждающие материалы: ожидают публикации">Supporting material: pending publication</span></p>
+      </div>
+      <div class="metric-card dev-card">
+        <div class="mc-head"><h3 class="t" data-ru="Теневое наведение (Shadow Guidance)">Shadow Guidance</h3></div>
+        <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Только симуляция">Simulation Only</span></span>
+        <p class="t" data-ru="Диагностические расчёты наведения оцениваются без выдачи реальных команд на оборудование БПЛА.">Diagnostic guidance calculations are evaluated without issuing real UAV hardware commands.</p>
+        <p class="evidence"><span class="t" data-ru="Подтверждающие материалы: ожидают публикации">Supporting material: pending publication</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEVELOPMENT PROGRESS ================= -->
+<section id="progress" class="section">
+  <span id="status" class="anchor-alias"></span>
+  <div class="container">
+    <div class="eyebrow"><span class="num">05</span><span class="t" data-ru="Ход разработки">Development Progress</span></div>
+    <div class="section-head">
+      <h2 class="t" data-ru="От концепции к проверенным программным возможностям">From Concept to Tested Software Capabilities</h2>
+      <p class="t" data-ru="По состоянию на октябрь 2026. Вехи приведены без календарных дат; у каждой указан реально достигнутый статус.">As of October 2026. Milestones are listed without calendar dates; each carries the status it has actually reached.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item active">
+        <div class="dot"></div>
+        <span class="when"><span class="t" data-ru="Веха 01">Milestone 01</span></span>
+        <h3 class="t" data-ru="Исследование сопровождения">Tracking Research</h3>
+        <p class="t" data-ru="Создан исследовательский конвейер обнаружения и сопровождения объектов на записанном видео.">A research pipeline for object detection and tracking on recorded video has been built.</p>
+        <span class="tag st st-done"><span class="g" aria-hidden="true">✓</span><span class="t" data-ru="Продемонстрировано">Demonstrated</span></span>
+      </div>
+      <div class="tl-item active">
+        <div class="dot"></div>
+        <span class="when"><span class="t" data-ru="Веха 02">Milestone 02</span></span>
+        <h3 class="t" data-ru="Непрерывность физической идентичности">Physical Identity Continuity</h3>
+        <p class="t" data-ru="Проверено сохранение идентичности физической цели при изменении ID трекера.">Preservation of physical target identity was verified when the tracker ID changes.</p>
+        <span class="tag st st-done"><span class="g" aria-hidden="true">✓</span><span class="t" data-ru="Продемонстрировано в контролируемых тестах">Demonstrated in Controlled Tests</span></span>
+      </div>
+      <div class="tl-item active">
+        <div class="dot"></div>
+        <span class="when"><span class="t" data-ru="Веха 03">Milestone 03</span></span>
+        <h3 class="t" data-ru="Восстановление после выхода из кадра">Off-Screen Recovery</h3>
+        <p class="t" data-ru="Проведён контролируемый сценарий выхода объекта из поля зрения и последующего восстановления сопровождения.">A controlled scenario was run in which an object leaves the field of view and tracking is then recovered.</p>
+        <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Синтетическая проверка">Synthetic Validation</span></span>
+      </div>
+      <div class="tl-item">
+        <div class="dot"></div>
+        <span class="when"><span class="t" data-ru="Веха 04">Milestone 04</span></span>
+        <h3 class="t" data-ru="Прототип Станции управления">Control Station Prototype</h3>
+        <p class="t" data-ru="Разрабатывается приложение для мониторинга миссий, состояний целей, событий и диагностической информации.">An application is being developed to monitor missions, target states, events and diagnostic information.</p>
+        <span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="В разработке">In Development</span></span>
+      </div>
+      <div class="tl-item">
+        <div class="dot"></div>
+        <span class="when"><span class="t" data-ru="Веха 05">Milestone 05</span></span>
+        <h3 class="t" data-ru="Надёжность среды выполнения">Runtime Reliability</h3>
+        <p class="t" data-ru="Проводятся проверки жизненного цикла среды выполнения, синхронизации состояний, WebSocket-подключений и обработки событий.">Checks are under way on runtime lifecycle, state synchronization, WebSocket connections and event handling.</p>
+        <span class="tag st st-test"><span class="g" aria-hidden="true">▲</span><span class="t" data-ru="Тестирование продолжается">Testing in Progress</span></span>
+      </div>
+      <div class="tl-item">
+        <div class="dot"></div>
+        <span class="when"><span class="t" data-ru="Веха 06">Milestone 06</span></span>
+        <h3 class="t" data-ru="Тактический интерфейс">Tactical Interface</h3>
+        <p class="t" data-ru="Утверждён визуальный референс нового интерфейса Tactical. Начата ли реализация — проверяется.">A visual reference for the new Tactical interface has been approved. Whether implementation has started is still being verified.</p>
+        <span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Дизайн утверждён / статус реализации проверяется">Design Approved / Implementation Status Pending Verification</span></span>
+      </div>
+    </div>
+    <ul class="status-list maturity">
+      <li><span class="label"><b class="t" data-ru="Зрелость технологии">Technology maturity</b>: <span class="t" data-ru="Исследования и разработка / Pre-Seed">Research &amp; Development / Pre-Seed</span></span><span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="R&amp;D">R&amp;D</span></span></li>
+      <li><span class="label"><span class="t" data-ru="Отдельные программные возможности продемонстрированы в исследовательской среде и симуляции.">Individual software capabilities have been demonstrated in research and simulation environments.</span></span><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Исследование / симуляция">Research / Simulation</span></span></li>
+      <li><span class="label"><span class="t" data-ru="Полностью интегрированная автономная система БПЛА ещё не проверена в полевых испытаниях.">A fully integrated autonomous UAV system has not yet been validated through field trials.</span></span><span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Ещё не проверено">Not yet validated</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTROL STATION ================= -->
+<section id="control-station" class="section">
+  <div class="container">
+    <div class="eyebrow"><span class="num">06</span><span class="t" data-ru="Станция управления RazorClaw">RazorClaw Control Station</span></div>
+    <div class="section-head">
+      <h2 class="t" data-ru="Станция управления RazorClaw — мониторинг миссий и диагностика">RazorClaw Control Station — Mission Monitoring &amp; Diagnostics</h2>
+    </div>
+    <div class="cs-layout">
+      <div>
+        <p class="t body-copy" data-ru="Разрабатывается специализированное приложение для визуализации жизненного цикла цели, поведения поиска, уверенности вне кадра, диагностики наведения и событий миссии.">A dedicated software application is being developed to visualize target lifecycle, search behavior, off-screen confidence, guidance diagnostics and mission events.</p>
+        <p class="t body-copy" data-ru="Платформа предназначена для воспроизводимого тестирования ПО, анализа оператором и будущей системной интеграции." style="margin-top:14px">The platform is intended to support reproducible software testing, operator review and future system integration.</p>
+        <h3 class="sub-head" style="margin-top:26px"><span class="t" data-ru="Функциональные направления">Functional directions</span></h3>
+        <ul class="cs-dirs"><li><span class="t" data-ru="Визуализация среды выполнения миссий">Mission runtime visualization</span></li><li><span class="t" data-ru="Мониторинг жизненного цикла физической цели">Physical target lifecycle monitoring</span></li><li><span class="t" data-ru="Мониторинг фазы поиска">Search phase monitoring</span></li><li><span class="t" data-ru="Визуализация состояния вне кадра и неопределённости">Off-screen state and uncertainty visualization</span></li><li><span class="t" data-ru="Диагностика теневого наведения">Shadow guidance diagnostics</span></li><li><span class="t" data-ru="Хронология событий и просмотр воспроизведения">Event timeline and replay inspection</span></li><li><span class="t" data-ru="Программная симуляция и регрессионное тестирование">Software simulation and regression testing</span></li></ul>
+        <div class="cs-modes">
+          <div class="cs-mode">
+            <h3 class="t" data-ru="Classic — существующий инженерный интерфейс">Classic — Existing Engineering Interface</h3>
+            <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Существует">Existing</span></span>
+            <p class="t" data-ru="Текущий инженерный интерфейс сохраняется.">The current engineering interface is preserved.</p>
+          </div>
+          <div class="cs-mode">
+            <h3 class="t" data-ru="Tactical — новый визуальный интерфейс">Tactical — New Visual Interface</h3>
+            <span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Дизайн утверждён · реализация проверяется">Design approved · implementation pending verification</span></span>
+            <p class="t" data-ru="Новая визуальная оболочка в стиле RazorClaw. Она не должна затрагивать алгоритмы и бэкенд.">A new visual shell in the RazorClaw style. It is not meant to touch algorithms or backend.</p>
+          </div>
         </div>
       </div>
+      <figure class="cs-visual" aria-label="Wireframe of the planned Control Station layout">
+        <div class="cs-visual-head mono"><span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="КОНЦЕПТ ДИЗАЙНА">DESIGN CONCEPT</span></span><span><span class="t" data-ru="СХЕМА · НЕ СКРИНШОТ ПРОДУКТА">WIREFRAME · NOT A PRODUCT SCREENSHOT</span></span></div>
+        <div class="wf" role="img" aria-label="Abstract layout of six monitoring panels">
+          <div class="wf-box wide"><span class="wf-k mono"><span class="t" data-ru="Среда миссии">Mission runtime</span></span><i class="wf-bar"></i><i class="wf-bar s"></i></div>
+          <div class="wf-box "><span class="wf-k mono"><span class="t" data-ru="Жизненный цикл цели">Target lifecycle</span></span><i class="wf-bar"></i><i class="wf-bar s"></i></div>
+          <div class="wf-box "><span class="wf-k mono"><span class="t" data-ru="Фаза поиска">Search phase</span></span><i class="wf-bar"></i><i class="wf-bar s"></i></div>
+          <div class="wf-box "><span class="wf-k mono"><span class="t" data-ru="Уверенность вне кадра">Off-screen confidence</span></span><i class="wf-bar"></i><i class="wf-bar s"></i></div>
+          <div class="wf-box "><span class="wf-k mono"><span class="t" data-ru="Диагностика наведения (сим.)">Guidance diagnostics (sim)</span></span><i class="wf-bar"></i><i class="wf-bar s"></i></div>
+          <div class="wf-box wide"><span class="wf-k mono"><span class="t" data-ru="Хронология / воспроизведение">Event timeline / replay</span></span><i class="wf-bar"></i><i class="wf-bar s"></i></div>
+        </div>
+        <figcaption><span class="t" data-ru="Только схема компоновки. Реальные скриншоты и записи демонстрации заменят этот блок после согласования публикации.">Layout schematic only. Real screenshots and demo recordings will replace this block once cleared for publication.</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- ================= SAFETY & COMPLIANCE ================= -->
+<!-- ================= ENGINEERING UPDATES ================= -->
+<section id="updates" class="section">
+  <div class="container">
+    <div class="eyebrow"><span class="num">07</span><span class="t" data-ru="Инженерные обновления">Engineering Updates</span></div>
+    <div class="section-head">
+      <h2 class="t" data-ru="Журнал разработки">Development Log</h2>
+      <p class="t" data-ru="Записи добавляются вручную и только тогда, когда их можно изложить точно. Точные результаты тестов публикуются только после проверки соответствующего CI/тест-отчёта.">Entries are added by hand and only when they can be stated accurately. Exact test results are published only after the matching CI/test report is checked.</p>
+    </div>
+    <ol class="updates-list" id="updatesList" aria-live="polite"></ol>
+    <script type="application/json" id="updatesData">[
+ {
+  "date": "2026-10",
+  "date_en": "October 2026",
+  "date_ru": "Октябрь 2026",
+  "title": "Control Station Reliability Work",
+  "title_ru": "Работа над надёжностью Станции управления",
+  "cat": "Control Station",
+  "cat_ru": "Станция управления",
+  "text": "Continued development of runtime lifecycle handling, frontend test coverage and event-state synchronization.",
+  "text_ru": "Продолжается разработка обработки жизненного цикла среды выполнения, покрытия фронтенда тестами и синхронизации состояний событий.",
+  "status": "In Development",
+  "link": ""
+ },
+ {
+  "date": "2026-10",
+  "date_en": "October 2026",
+  "date_ru": "Октябрь 2026",
+  "title": "Runtime Validation Checks",
+  "title_ru": "Проверки среды выполнения",
+  "cat": "Testing",
+  "cat_ru": "Тестирование",
+  "text": "Checks under way on runtime lifecycle, state synchronization, WebSocket connections and event processing. No test results are published yet.",
+  "text_ru": "Проводятся проверки жизненного цикла среды выполнения, синхронизации состояний, WebSocket-подключений и обработки событий. Результаты тестов пока не опубликованы.",
+  "status": "Testing",
+  "link": ""
+ },
+ {
+  "date": "2026-10",
+  "date_en": "October 2026",
+  "date_ru": "Октябрь 2026",
+  "title": "Tactical Interface Reference Approved",
+  "title_ru": "Утверждён референс Tactical-интерфейса",
+  "cat": "UI",
+  "cat_ru": "Интерфейс",
+  "text": "The visual reference for the new Tactical interface is approved. Implementation status is pending verification.",
+  "text_ru": "Визуальный референс нового Tactical-интерфейса утверждён. Статус реализации проверяется.",
+  "status": "Planned",
+  "link": ""
+ }
+]</script>
+  </div>
+</section>
+
+<!-- ================= ROADMAP ================= -->
+<section id="roadmap" class="section">
+  <div class="container">
+    <div class="eyebrow"><span class="num">08</span><span class="t" data-ru="План">Roadmap</span></div>
+    <div class="section-head">
+      <h2 class="t" data-ru="План по этапам разработки">Milestone-Based Roadmap</h2>
+      <p class="t" data-ru="Сроки завершения не обещаются, пока не утверждён план работ с ресурсами.">No completion dates are committed until a resourced work plan is approved.</p>
+    </div>
+    <ol class="rm-list">
+      <li class="rm-row"><span class="rm-n mono">01</span><span class="t rm-name" data-ru="Исследования в области компьютерного зрения">Computer Vision R&amp;D</span><span class="tag st st-done"><span class="g" aria-hidden="true">✓</span><span class="t" data-ru="Продемонстрировано">Demonstrated</span></span></li>
+      <li class="rm-row"><span class="rm-n mono">02</span><span class="t rm-name" data-ru="Исследование сопровождения и повторного захвата">Tracking &amp; Reacquisition Research</span><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Синтетическая проверка">Synthetic Validation</span></span></li>
+      <li class="rm-row"><span class="rm-n mono">03</span><span class="t rm-name" data-ru="Разработка Станции управления">Control Station Development</span><span class="tag st st-dev"><span class="g" aria-hidden="true">●</span><span class="t" data-ru="В процессе">In Progress</span></span></li>
+      <li class="rm-row"><span class="rm-n mono">04</span><span class="t rm-name" data-ru="Сквозная программная интеграция">End-to-End Software Integration</span><span class="tag st st-next"><span class="g" aria-hidden="true">→</span><span class="t" data-ru="Следующая веха">Next Milestone</span></span></li>
+      <li class="rm-row"><span class="rm-n mono">05</span><span class="t rm-name" data-ru="Интеграция с БПЛА и проверка безопасности">UAV Integration &amp; Safety Validation</span><span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Запланировано">Planned</span></span></li>
+      <li class="rm-row"><span class="rm-n mono">06</span><span class="t rm-name" data-ru="Интегрированный MVP и полевая демонстрация">Integrated MVP &amp; Field Demonstration</span><span class="tag st st-plan"><span class="g" aria-hidden="true">○</span><span class="t" data-ru="Запланировано">Planned</span></span></li>
+    </ol>
+    <div class="focus-grid">
+      <div class="focus-box">
+        <h3 class="t sub-head" data-ru="Текущий фокус разработки">Current Development Focus</h3>
+        <p class="t" data-ru="Завершить и проверить интеграцию между записанным видео, движком сопровождения, бэкенд-средой и Станцией управления.">Complete and validate integration between recorded video, the tracking engine, the backend runtime and the Control Station.</p>
+        <p class="milestone"><span class="t k" data-ru="Следующая веха">Next milestone</span> <span class="t" data-ru="Воспроизводимая сквозная программная демонстрация с синхронизированным видео, состояниями сопровождения, хронологией событий и диагностикой.">A reproducible end-to-end software demo with synchronized video, tracking states, event timeline and diagnostics.</span></p>
+      </div>
+      <div class="focus-box">
+        <h3 class="t sub-head" data-ru="Следующие шаги">Next Steps</h3>
+        <ol class="next-steps"><li><span class="t" data-ru="Завершить программную интеграцию и тестирование надёжности">Complete software integration and reliability testing</span></li><li><span class="t" data-ru="Проверить сопровождение и повторный захват на более широком наборе записанных видео">Validate tracking and reacquisition on broader recorded-video scenarios</span></li><li><span class="t" data-ru="Разработать интерфейс Тактической станции управления">Develop the Tactical Control Station interface</span></li><li><span class="t" data-ru="Подготовить архитектуру интеграции с БПЛА и проверки безопасности">Prepare UAV integration and safety-validation architecture</span></li><li><span class="t" data-ru="Двигаться к контролируемым испытаниям оборудования и интегрированному MVP">Progress toward controlled hardware testing and an integrated MVP</span></li></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAFETY & VALIDATION ================= -->
 <section id="safety" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">05</span><span class="t" data-ru="Безопасность и соответствие">Safety &amp; Compliance</span></div>
+    <div class="eyebrow"><span class="num">09</span><span class="t" data-ru="Безопасность и проверка">Safety &amp; Validation</span></div>
     <div class="section-head">
-      <h2 class="t" data-ru="Безопасность и соответствие">Safety &amp; Compliance</h2>
+      <h2 class="t" data-ru="Разработка, ориентированная на безопасность, и честная проверка">Safety-Led Development and Honest Validation</h2>
     </div>
-    <div class="safety-grid">
+    <div class="split">
+      <div>
+        <p class="t body-copy" data-ru="Сейчас RazorClaw Systems сосредоточена на программных исследованиях, симуляции и контролируемой проверке.">RazorClaw Systems is currently focused on software research, simulation and controlled validation.</p>
+        <p class="t body-copy" data-ru="Теневое наведение используется для диагностической оценки и не является активным управлением БПЛА." style="margin-top:14px">Shadow guidance is used for diagnostic evaluation and does not represent active UAV control.</p>
+      </div>
+      <div>
+        <p class="t body-copy" data-ru="Будущая интеграция оборудования и полевая эксплуатация потребуют дополнительной инженерной работы, оценки безопасности и применимых регуляторных разрешений.">Future hardware integration and field operations will require additional engineering, safety assessment and applicable regulatory approvals.</p>
+      </div>
+    </div>
+    <div class="safety-grid" style="margin-top:36px">
       <div class="safety-col">
-        <h3 class="t" data-ru="Отказоустойчивость">Fail-Safes</h3>
-        <ul>
-          <li class="t" data-ru="Автоматическое возвращение">Return-to-home</li>
-          <li class="t" data-ru="Геозонирование">Geo-fencing</li>
-          <li class="t" data-ru="Ручное управление">Manual override</li>
-        </ul>
+        <h3 class="t" data-ru="Текущие рамки">Current scope</h3>
+        <ul><li><span class="t" data-ru="Программные исследования и симуляция">Software research and simulation</span></li><li><span class="t" data-ru="Контролируемая проверка на записанном видео и синтетических сценариях">Controlled validation on recorded video and synthetic scenarios</span></li><li><span class="t" data-ru="Команды на оборудование не выдаются">No hardware commands are issued</span></li><li><span class="t" data-ru="Реальные полёты БПЛА не заявляются">No live UAV flights are claimed</span></li></ul>
       </div>
       <div class="safety-col">
-        <h3 class="t" data-ru="Безопасность данных">Security</h3>
-        <ul>
-          <li class="t" data-ru="Журналы аудита">Audit logs</li>
-          <li class="t" data-ru="Ролевой доступ">Role-based access</li>
-          <li class="t" data-ru="Шифрование при передаче">Encryption in transit</li>
-        </ul>
+        <h3 class="t" data-ru="Требования для будущей интеграции">Requirements for future integration</h3>
+        <ul><li><span class="t" data-ru="Геозонирование">Geo-fencing</span></li><li><span class="t" data-ru="Ручное управление">Manual override</span></li><li><span class="t" data-ru="Автоматическое возвращение">Return-to-home</span></li><li><span class="t" data-ru="Журналы аудита и ролевой доступ">Audit logs and role-based access</span></li><li><span class="t" data-ru="Шифрование при передаче">Encryption in transit</span></li></ul>
+        <p class="col-note"><span class="t" data-ru="Это требования, а не существующие или проверенные возможности.">These are requirements, not existing or validated capabilities.</span></p>
       </div>
       <div class="safety-col">
-        <h3 class="t" data-ru="Эксплуатация">Operations</h3>
-        <ul>
-          <li class="t" data-ru="Соблюдение местных законов и политик объекта при эксплуатации">Local laws and site policies respected during operation</li>
-        </ul>
+        <h3 class="t" data-ru="Соответствие требованиям">Compliance</h3>
+        <ul><li><span class="t" data-ru="Необходимо соблюдать местные законы и политики объекта">Local laws and site policies must be respected</span></li><li><span class="t" data-ru="Перед любой полевой эксплуатацией нужны применимые регуляторные разрешения">Applicable regulatory approvals are required before any field operation</span></li></ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= MARKET & METRICS ================= -->
+<!-- ================= MARKET & BUSINESS MODEL ================= -->
 <section id="market" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">06</span><span class="t" data-ru="Рынок и метрики">Market &amp; Metrics</span></div>
+    <div class="eyebrow"><span class="num">10</span><span class="t" data-ru="Рынок и бизнес-модель">Market &amp; Business Model</span></div>
     <div class="section-head">
-      <h2 class="t" data-ru="Честные цифры, публикуемые после проверки">Honest Numbers, Published After Validation</h2>
+      <h2 class="t" data-ru="Гипотезы и методология, а не заявления">Hypotheses and Methodology, Not Claims</h2>
+      <p><span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Проверка рынка / исследование бизнес-модели">Market Validation / Business Model Research</span></span></p>
     </div>
     <div class="metric-grid">
       <div class="metric-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="TAM / SAM / SOM">TAM / SAM / SOM</h3>
-          <span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Исследование">Research</span></span>
-        </div>
-        <p class="t" data-ru="Методология в разработке. Никаких умозрительных цифр. Результаты будут опубликованы после проверки.">Methodology in progress. No speculative figures. Results to be published post-validation.</p>
-        <ul class="metric-list">
-          <li class="t" data-ru="Методология: снизу вверх (количество объектов × часы патрулирования × ASP)"><b>Methodology:</b> bottom-up (site count × patrol hours × ASP)</li>
-          <li class="t" data-ru="Источники: интервью с покупателями, данные госзакупок"><b>Sources:</b> buyer interviews, public procurement data</li>
-        </ul>
+        <div class="mc-head"><h3 class="t" data-ru="TAM / SAM / SOM">TAM / SAM / SOM</h3></div>
+        <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Исследование">Research</span></span>
+        <p class="t" data-ru="Методология в разработке. Объёмы рынка не публикуются, пока их нельзя подтвердить.">Methodology in progress. No market sizes are published until they can be supported.</p>
+        <ul class="metric-list"><li><span class="t" data-ru="Подход: снизу вверх, по сегментам">Approach: bottom-up, by segment</span></li><li><span class="t" data-ru="Источники: интервью с покупателями, данные госзакупок">Sources: buyer interviews, public procurement data</span></li></ul>
       </div>
       <div class="metric-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Пилотный портфель">Pilot Pipeline</h3>
-          <span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="В процессе">In Progress</span></span>
-        </div>
-        <p class="t" data-ru="Поиск заказчиков и определение требований ведутся с ранними последователями.">Prospect discovery and requirements mapping underway with early adopters.</p>
-        <ul class="metric-list">
-          <li class="t" data-ru="Методология: структурированный сбор данных + аудит объекта"><b>Methodology:</b> structured intake + site audit</li>
-          <li class="t" data-ru="Артефакты: бэклог MoSCoW, метрики успеха"><b>Artifacts:</b> MoSCoW backlog, success metrics</li>
-        </ul>
+        <div class="mc-head"><h3 class="t" data-ru="Потенциальные сегменты">Potential Segments</h3></div>
+        <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="Гипотезы">Hypotheses</span></span>
+        <p class="t" data-ru="Изучаемые сегменты. Ни один пока не подтверждён как заказчик.">Segments under study. None is yet confirmed as a customer.</p>
+        <ul class="metric-list"><li><span class="t" data-ru="Операторы служб безопасности">Security operators</span></li><li><span class="t" data-ru="Критическая инфраструктура">Critical infrastructure</span></li><li><span class="t" data-ru="Интеграторы воздушного мониторинга">Aerial monitoring integrators</span></li><li><span class="t" data-ru="Государственные заказчики">Government customers</span></li></ul>
       </div>
       <div class="metric-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Юнит-экономика">Unit Economics</h3>
-          <span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Методология">Methodology</span></span>
-        </div>
-        <p class="t" data-ru="Модель затрат = оборудование (BOM) + зарядка + ПО + эксплуатация. Публикация после пилота.">Cost model = hardware (BOM) + charging + software + ops. Publish after pilot.</p>
-        <ul class="metric-list">
-          <li class="t" data-ru="Подход: когортный LTV/CAC, целевой срок окупаемости"><b>Approach:</b> cohort LTV/CAC, payback target</li>
-          <li class="t" data-ru="Доказательства: полевые журналы, анализ простоев"><b>Evidence:</b> field logs, downtime analysis</li>
-        </ul>
+        <div class="mc-head"><h3 class="t" data-ru="Бизнес-модель и ценообразование">Business Model &amp; Pricing</h3></div>
+        <span class="tag st st-sim"><span class="g" aria-hidden="true">◆</span><span class="t" data-ru="На стадии проверки">Under Validation</span></span>
+        <p class="t" data-ru="Бизнес-модель и ценообразование находятся на стадии проверки. Контракты, платные пилоты и выручка не заявляются.">The business model and pricing are at the validation stage. No contracts, paid pilots or revenue are claimed.</p>
+        <ul class="metric-list"><li><span class="t" data-ru="Модель затрат: определяется вместе с продуктом">Cost model: to be defined with the product</span></li><li><span class="t" data-ru="Цифры публикуются только после проверки">Figures published only after validation</span></li></ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= DEVELOPMENT STATUS ================= -->
-<section id="roadmap" class="section">
-  <div class="container">
-    <div class="eyebrow"><span class="num">07</span><span class="t" data-ru="Статус разработки">Development Status</span></div>
-    <div class="section-head">
-      <h2 class="t" data-ru="От концепции к рабочим программным прототипам">From Concept to Working Software Prototypes</h2>
-      <p class="t" data-ru="По состоянию на октябрь 2026. Фокус: компьютерное зрение, сопровождение физической цели, повторный захват, поиск с учётом неопределённости и платформа управления миссиями.">As of October 2026. Focus: computer vision, physical target tracking, reacquisition, uncertainty-aware search and a mission control platform.</p>
-    </div>
-    <h3 class="sub-head t" data-ru="Прогресс технологий">Technology Progress</h3>
-    <div class="metric-grid dev-grid">
-      <div class="metric-card dev-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Компьютерное зрение и сопровождение">Computer Vision &amp; Tracking</h3>
-        </div>
-        <span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Прототип R&amp;D">R&amp;D Prototype</span></span>
-        <p class="t" data-ru="Детекция, сопровождение и управление идентичностью физической цели, проверены на записанном видео.">Detection, tracking and physical target identity management, tested on recorded video.</p>
-        <ul class="metric-list"><li class="t" data-ru="Конвейер детекции и сопровождения">Detection and tracking pipeline</li><li class="t" data-ru="Управление идентичностью физической цели">Physical target identity management</li><li class="t" data-ru="Оценка на записанном видео">Evaluated on recorded video</li></ul>
-      </div>
-      <div class="metric-card dev-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Повторный захват цели">Target Reacquisition</h3>
-        </div>
-        <span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="Синтетическая проверка">Synthetic Validation</span></span>
-        <p class="t" data-ru="Повторный захват цели после выхода из поля зрения, проверен на синтетических сценариях.">Reacquisition of a target after it leaves the field of view, validated on synthetic scenarios.</p>
-        <ul class="metric-list"><li class="t" data-ru="Повторный захват после выхода из поля зрения">Reacquisition after leaving the field of view</li><li class="t" data-ru="Непрерывность идентичности при смене ID трекера">Identity continuity across tracker ID changes</li></ul>
-      </div>
-      <div class="metric-card dev-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Поиск и теневое сопровождение">Search &amp; Shadow Guidance</h3>
-        </div>
-        <span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Исследовательский прототип">Research Prototype</span></span>
-        <p class="t" data-ru="Логика только в симуляции: без выдачи команд на оборудование.">Simulation-only logic: no hardware command output.</p>
-        <ul class="metric-list"><li class="t" data-ru="Управление состоянием поиска">Search-state management</li><li class="t" data-ru="Оценка уверенности вне кадра (поиск с учётом неопределённости)">Off-screen confidence estimation (uncertainty-aware search)</li><li class="t" data-ru="Диагностические подсказки наведения">Diagnostic guidance output</li></ul>
-      </div>
-      <div class="metric-card dev-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Станция управления RazorClaw">RazorClaw Control Station</h3>
-        </div>
-        <span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="Активная разработка">Active Development</span></span>
-        <p class="t" data-ru="Платформа управления миссиями для работы в симуляции.">Mission control platform for simulation-based work.</p>
-        <ul class="metric-list"><li class="t" data-ru="Визуализация состояний цели">Visualize target states</li><li class="t" data-ru="Управление симуляционными миссиями">Manage simulation missions</li><li class="t" data-ru="Просмотр событий">Inspect events</li><li class="t" data-ru="Воспроизводимое тестирование">Reproducible testing</li><li class="t" data-ru="Тесты фронтенда и проверка бэкенд-среды продолжаются">Frontend tests and backend runtime validation ongoing</li></ul>
-      </div>
-      <div class="metric-card dev-card">
-        <div class="mc-head">
-          <h3 class="t" data-ru="Тактический интерфейс управления">Tactical Control Interface</h3>
-        </div>
-        <span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Фаза проектирования">Design Phase</span></span>
-        <p class="t" data-ru="Новый тактический интерфейс мониторинга проектируется с сохранением существующего инженерного интерфейса и архитектуры.">New tactical monitoring UI designed while preserving the existing engineering interface and architecture.</p>
-        <ul class="metric-list"><li class="t" data-ru="Тактический интерфейс мониторинга">Tactical monitoring UI</li><li class="t" data-ru="Существующий инженерный интерфейс сохраняется">Existing engineering interface preserved</li></ul>
-      </div>
-    </div>
-    <div class="focus-grid">
-      <div class="focus-box">
-        <h3 class="sub-head t" data-ru="Текущий фокус разработки">Current Development Focus</h3>
-        <p class="t" data-ru="Завершить и проверить интеграцию между записанным видео, движком сопровождения, бэкенд-средой и Станцией управления.">Complete and validate integration between recorded video, the tracking engine, the backend runtime and the Control Station.</p>
-        <p class="milestone"><span class="k t" data-ru="Следующая веха">Next milestone</span> <span class="t" data-ru="Воспроизводимая сквозная программная демонстрация с синхронизированным видео, состояниями сопровождения, хронологией событий и диагностикой.">A reproducible end-to-end software demo with synchronized video, tracking states, event timeline and diagnostics.</span></p>
-      </div>
-      <div class="focus-box">
-        <h3 class="sub-head t" data-ru="Следующие шаги">Next Steps</h3>
-        <ol class="next-steps"><li class="t" data-ru="Завершить программную интеграцию и тестирование надёжности">Complete software integration and reliability testing</li><li class="t" data-ru="Проверить сопровождение и повторный захват на более широком наборе записанных видео">Validate tracking and reacquisition on broader recorded-video scenarios</li><li class="t" data-ru="Разработать интерфейс Тактической станции управления">Develop the Tactical Control Station interface</li><li class="t" data-ru="Подготовить архитектуру интеграции с БПЛА и проверки безопасности">Prepare UAV integration and safety-validation architecture</li><li class="t" data-ru="Двигаться к контролируемым испытаниям оборудования и интегрированному MVP">Progress toward controlled hardware testing and an integrated MVP</li></ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TEAM & FOUNDER ================= -->
+<!-- ================= FOUNDER & CTO SEARCH ================= -->
 <section id="team" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">08</span><span class="t" data-ru="Команда">Team</span></div>
+    <div class="eyebrow"><span class="num">11</span><span class="t" data-ru="Основатель и поиск CTO">Founder &amp; CTO Search</span></div>
     <div class="section-head">
-      <h2 class="t" data-ru="Основатель и генеральный директор">Founder &amp; CEO</h2>
+      <h2 class="t" data-ru="Основатель">Founder</h2>
     </div>
     <div class="founder-wrap">
       <div class="founder-portrait" aria-hidden="true"><span class="initials">RC</span></div>
       <div>
         <h3 class="founder-name">Roman Chaikin</h3>
-        <span class="founder-role t" data-ru="Продукт и операции">Product &amp; Operations</span>
+        <span class="t founder-role" data-ru="Продукт и операции">Product &amp; Operations</span>
         <p class="t" data-ru="Строит RazorClaw Systems с фокусом на безопасность, надёжность и прозрачную экономику.">Building RazorClaw Systems with a focus on safety, reliability and clear economics.</p>
-        <div class="open-role">
-          <span class="t" data-ru="Открытая вакансия:">Open Role:</span> <b>CTO</b>
-        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ================= TECHNOLOGY MATURITY ================= -->
-<section id="status" class="section">
-  <div class="container">
-    <div class="eyebrow"><span class="num">09</span><span class="t" data-ru="Зрелость технологии">Technology Maturity</span></div>
-    <div class="section-head">
-      <h2 class="t" data-ru="Исследования и разработка / Pre-Seed">Research &amp; Development / Pre-Seed</h2>
+    <div class="cto-card">
+      <div>
+        <h3 class="t" data-ru="Мы ищем технического сооснователя / CTO">We&#x27;re Looking for a Technical Co-Founder / CTO</h3>
+        <p class="t" data-ru="RazorClaw Systems ищет технического партнёра с опытом в компьютерном зрении, робототехнике, системах реального времени и архитектуре ПО.">RazorClaw Systems is seeking a technical partner with experience in computer vision, robotics, real-time systems and software architecture.</p>
+        <p class="t" data-ru="Роль включает развитие платформы сопровождения, усиление системной интеграции и подготовку технологии к будущей проверке на оборудовании.">The role involves advancing the tracking platform, strengthening system integration and preparing the technology for future hardware validation.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary t" data-ru="Обсудить роль CTO">Discuss CTO Opportunity</a>
     </div>
-    <ul class="status-list">
-      <li><span class="label t" data-ru="Отдельные программные возможности продемонстрированы в исследовательской среде и симуляции">Individual software capabilities demonstrated in research and simulation environments</span><span class="tag status-progress"><span class="dot"></span><span class="t" data-ru="R&amp;D">R&amp;D</span></span></li>
-      <li><span class="label t" data-ru="Полностью интегрированная автономная система БПЛА ещё не проверена в полевых испытаниях">A fully integrated autonomous UAV system has not yet been validated through field trials</span><span class="tag status-research"><span class="dot"></span><span class="t" data-ru="Не проверено">Not validated</span></span></li>
-      <li><span class="label t" data-ru="Ищем стратегические инвестиции и техническое сотрудничество: программная интеграция, проверка оборудования, готовность к будущим пилотам">Seeking strategic investment and technical collaboration: software integration, hardware validation, future pilot readiness</span><span class="tag status-active"><span class="dot"></span><span class="t" data-ru="Открыты">Open</span></span></li>
-    </ul>
   </div>
 </section>
 
-<!-- ================= INVESTMENT ================= -->
+<!-- ================= INVESTMENT OPPORTUNITY ================= -->
 <section id="investment" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">10</span><span class="t" data-ru="Инвестиции">Investment</span></div>
+    <div class="eyebrow"><span class="num">12</span><span class="t" data-ru="Инвестиционная возможность">Investment Opportunity</span></div>
     <div class="invest-wrap">
       <div>
-        <h2 class="t" data-ru="Инвестиционный запрос">Investment Ask</h2>
-        <p class="body-copy t" style="margin-top:16px" data-ru="Ищем стратегические инвестиции и технических партнёров для программной интеграции, проверки оборудования и будущей готовности к пилотам.">Seeking strategic investment and technical partners for software integration, hardware validation and future pilot readiness.</p>
-        <ul class="funds">
-          <li class="t" data-ru="Направления: программная интеграция, проверка оборудования, готовность к пилотам">Focus areas: software integration, hardware validation, pilot readiness</li>
-          <li class="t" data-ru="Финансирование привязано к техническим вехам">Funding tied to technical milestones</li>
-        </ul>
-        <p class="invest-note t" data-ru="Никаких завышенных заявлений или сфабрикованных метрик. Мы публикуем результаты только после методичной проверки.">No inflated claims or fabricated metrics. We publish results after methodical validation.</p>
+        <h2 class="t" data-ru="Инвестиции в следующий этап RazorClaw Systems">Investing in the Next Stage of RazorClaw Systems</h2>
+        <p class="t body-copy" data-ru="RazorClaw Systems ищет стратегические инвестиции и техническое сотрудничество, чтобы развить программные прототипы до интегрированной, проверенной платформы воздушного мониторинга." style="margin-top:16px">RazorClaw Systems is seeking strategic investment and technical collaboration to advance its software prototypes toward an integrated, validated aerial monitoring platform.</p>
+        <h3 class="sub-head" style="margin-top:24px"><span class="t" data-ru="Использование финансирования">Use of funding</span></h3>
+        <ul class="funds"><li><span class="t" data-ru="Программная инженерия и интеграция.">Software engineering and integration.</span></li><li><span class="t" data-ru="Исследования и проверка в области компьютерного зрения.">Computer vision research and validation.</span></li><li><span class="t" data-ru="Разработка Станции управления.">Control Station development.</span></li><li><span class="t" data-ru="Подготовка к интеграции оборудования.">Hardware integration preparation.</span></li><li><span class="t" data-ru="Тестирование безопасности и будущие полевые демонстрации.">Safety testing and future field demonstrations.</span></li></ul>
+        <h3 class="sub-head" style="margin-top:24px"><span class="t" data-ru="Следующая инвестиционная веха">Next investment milestone</span></h3>
+        <p class="t body-copy" data-ru="Воспроизводимая сквозная программная демонстрация, связывающая записанное видео, сопровождение, события среды выполнения и визуализацию в Станции управления.">A reproducible end-to-end software demonstration connecting recorded video, tracking, runtime events and Control Station visualization.</p>
+        <p class="t invest-note" data-ru="Никаких завышенных заявлений или сфабрикованных метрик. Мы публикуем результаты только после методичной проверки.">No inflated claims or fabricated metrics. We publish results after methodical validation.</p>
       </div>
       <div class="invest-side">
-        <a href="#contact" class="btn btn-primary btn-block t" data-ru="Скачать презентацию (PDF)">Download Pitch Deck (PDF)</a>
+        <a href="#contact" class="btn btn-primary btn-block t" data-ru="Запросить презентацию для инвесторов">Request Investor Deck</a>
       </div>
     </div>
   </div>
@@ -1683,34 +1944,38 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="section">
   <div class="container">
-    <div class="eyebrow"><span class="num">11</span><span class="t" data-ru="Контакты">Contact</span></div>
+    <div class="eyebrow"><span class="num">13</span><span class="t" data-ru="Контакты">Contact</span></div>
     <div class="contact-layout">
       <div>
-        <h2 class="t" data-ru="Запросить презентацию">Request the Pitch Deck</h2>
-        <p class="body-copy t" style="margin-top:16px" data-ru="Оставьте контакты, и мы вышлем презентацию RazorClaw Systems и дальнейшие обновления.">Leave your details and we'll send the RazorClaw Systems pitch deck and follow-up updates.</p>
+        <h2 class="t" data-ru="Запросить презентацию для инвесторов">Request the Investor Deck</h2>
+        <p class="t body-copy" data-ru="Оставьте контакты, и мы вышлем презентацию RazorClaw Systems для инвесторов и дальнейшие обновления." style="margin-top:16px">Leave your details and we&#x27;ll send the RazorClaw Systems investor deck and follow-up updates.</p>
         <div class="contact-links">
-          <a href="https://t.me/AegisAI_Support" target="_blank" rel="noopener"><span class="k">Telegram</span><span>@AegisAI_Support</span></a>
+          <a href="https://t.me/AegisAI_Support" target="_blank" rel="noopener noreferrer"><span class="k">Telegram</span><span>@AegisAI_Support</span></a>
           <a href="mailto:2025pilot.guard@gmail.com"><span class="k">Email</span><span>2025pilot.guard@gmail.com</span></a>
-          <a href="https://github.com/GuardPilot/aegisai" target="_blank" rel="noopener"><span class="k">GitHub</span><span>GuardPilot/aegisai</span></a>
         </div>
       </div>
       <div class="form-panel">
-        <form id="deckForm">
+        <form id="deckForm" novalidate>
           <div class="field">
-            <label for="fName t" data-ru="Имя">Name</label>
+            <label for="fName" class="t" data-ru="Имя *">Name *</label>
             <input type="text" id="fName" name="name" required autocomplete="name">
           </div>
           <div class="field">
-            <label for="fCompany" class="t" data-ru="Компания">Company</label>
+            <label for="fEmail" class="t" data-ru="Email *">Email *</label>
+            <input type="email" id="fEmail" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="fCompany" class="t" data-ru="Компания (необязательно)">Company (optional)</label>
             <input type="text" id="fCompany" name="company" autocomplete="organization">
           </div>
           <div class="field">
-            <label for="fEmail" class="t" data-ru="Email">Email</label>
-            <input type="email" id="fEmail" name="email" required autocomplete="email">
+            <label for="fMessage" class="t" data-ru="Сообщение (необязательно)">Message (optional)</label>
+            <textarea id="fMessage" name="message" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-block t" data-ru="Запросить презентацию">Request Deck</button>
-          <p class="form-note t" data-ru="При отправке откроется письмо на 2025pilot.guard@gmail.com с вашими данными.">Submitting opens an email to 2025pilot.guard@gmail.com with your details.</p>
-          <div class="form-success" id="formSuccess"></div>
+          <button type="submit" class="btn btn-primary btn-block t" data-ru="Подготовить письмо">Prepare Email</button>
+          <p class="form-note t" data-ru="Эта форма ничего не отправляет на сервер. Она открывает ваш почтовый клиент с готовым письмом на 2025pilot.guard@gmail.com; данные уходят только после того, как вы сами отправите письмо.">This form does not send anything to a server. It opens your email client with a pre-filled message to 2025pilot.guard@gmail.com; nothing is sent until you send that email yourself.</p>
+          <p class="form-note t" data-ru="Отправляя письмо, вы соглашаетесь на обработку указанных в нём контактных данных для ответа вам (см. политику конфиденциальности ниже).">By sending the email you agree that the contact details in it are processed to reply to you (see the privacy note below).</p>
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
@@ -1726,13 +1991,13 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
         <img src="assets/logo.png" alt="RazorClaw Systems">
       </div>
       <div style="max-width:640px;">
-        <p class="legal-text t" data-ru="<b>Отказ от ответственности:</b> Полёты выполняются в соответствии с местным законодательством, политиками объекта и требованиями безопасности. Средства сдерживания применяются только там, где это разрешено." data-html="1"><b>Disclaimer:</b> Flight operations comply with local laws, site policies and safety constraints. Deterrent payloads used only where permitted.</p>
-        <p class="legal-text t" data-ru="<b>Политика конфиденциальности:</b> Мы собираем контактные данные, которые вы отправляете, чтобы прислать презентацию и обновления. Данные хранятся безопасно и никогда не продаются. Чтобы удалить свои данные, напишите нам." data-html="1"><b>Privacy Policy:</b> We collect contact details you submit to share the pitch deck and updates. Data is stored securely and never sold. To remove your data, email us.</p>
+        <p class="legal-text t" data-ru="<b>Отказ от ответственности:</b> RazorClaw Systems находится на стадии исследований и разработки. Интерфейсы и визуализации на этом сайте — концептуальные и не показывают реальную операцию БПЛА. Любая будущая эксплуатация потребует проверки безопасности и применимых разрешений." data-html="1"><b>Disclaimer:</b> RazorClaw Systems is at the research and development stage. Interfaces and visualizations on this site are conceptual and do not show a live UAV operation. Any future operation will require safety validation and applicable approvals.</p>
+        <p class="legal-text t" data-ru="<b>Политика конфиденциальности:</b> Мы собираем контактные данные, которые вы отправляете, чтобы прислать презентацию для инвесторов и обновления. Данные хранятся безопасно и никогда не продаются. Чтобы удалить свои данные, напишите нам." data-html="1"><b>Privacy Policy:</b> We collect contact details you submit to share the investor deck and updates. Data is stored securely and never sold. To remove your data, email us.</p>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 RazorClaw Systems</span>
-      <span class="t" data-ru="Автономные системы безопасности">Autonomous Security Systems</span>
+      <span class="t" data-ru="Воздушная аналитика и сопровождение целей">Aerial Intelligence &amp; Target Tracking</span>
     </div>
   </div>
 </footer>
@@ -1769,6 +2034,13 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
   var htmlEl = document.documentElement;
 
   function setLang(lang){
+    /* keep the section currently in view anchored while text lengths change */
+    var anchorEl = null, anchorTop = 0;
+    var cands = document.querySelectorAll('main section, footer');
+    for(var ci=0; ci<cands.length; ci++){
+      var r = cands[ci].getBoundingClientRect();
+      if(r.bottom > 80){ anchorEl = cands[ci]; anchorTop = r.top; break; }
+    }
     htmlEl.setAttribute('data-lang', lang);
     htmlEl.setAttribute('lang', lang === 'ru' ? 'ru' : 'en');
     document.querySelectorAll('.t').forEach(function(el){
@@ -1787,6 +2059,10 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     langRu.classList.toggle('active', lang === 'ru');
     langEn.setAttribute('aria-pressed', lang === 'en');
     langRu.setAttribute('aria-pressed', lang === 'ru');
+    if(anchorEl && window.scrollY > 40){
+      var delta = anchorEl.getBoundingClientRect().top - anchorTop;
+      if(Math.abs(delta) > 1){ window.scrollTo({top: window.scrollY + delta, behavior: 'instant'}); }
+    }
   }
   langEn.addEventListener('click', function(){ setLang('en'); });
   langRu.addEventListener('click', function(){ setLang('ru'); });
@@ -1842,42 +2118,51 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     function runCycle(){
       if(reduceMotion){
         setSteps(0);
-        setStatus('Autonomous patrol active.', 'Автономный патруль активен.');
+        setStatus('Concept simulation (static).', 'Концептуальная симуляция (статично).');
         return; // no looping animation under reduced motion
       }
+      var pick = null;
       var seq = [
         {t:0,    fn:function(){
-          setSteps(0);
+          setSteps(-1);
           iTargets.forEach(function(el){ el.classList.remove('hit'); });
           objCountEl.textContent = '0';
-          setStatus('Scanning perimeter…','Сканирование периметра...');
-          pushLog('Patrol sweep <b>nominal</b>', 'Обход периметра <b>штатно</b>');
+          setStatus('Analyzing frame…','Анализ кадра...');
+          pushLog('Simulated frame <b>analysis</b>', 'Симуляция: <b>анализ</b> кадра');
         }},
-        {t:3200, fn:function(){
-          var pick = iTargets[Math.floor(Math.random()*iTargets.length)];
-          iTargets.forEach(function(el){ el.classList.remove('hit'); });
+        {t:3000, fn:function(){
+          pick = iTargets[Math.floor(Math.random()*iTargets.length)];
           pick.classList.add('hit');
           objCountEl.textContent = '1';
+          setSteps(0);
+          setStatus('Object detected (simulated).','Объект обнаружен (симуляция).');
+          pushLog('Object <b>detected</b> (simulated)', 'Объект <b>обнаружен</b> (симуляция)');
+        }},
+        {t:4200, fn:function(){
           setSteps(1);
-          setStatus('Object detected — classifying…','Обнаружен объект — классификация...');
-          pushLog('Object <b>OBJ_0'+ (42+Math.floor(Math.random()*9)) +'</b> detected', 'Обнаружен объект <b>OBJ_0'+(42+Math.floor(Math.random()*9))+'</b>');
+          setStatus('Track established (simulated).','Сопровождение установлено (симуляция).');
+          pushLog('Track <b>established</b> (simulated)', 'Сопровождение <b>установлено</b> (симуляция)');
         }},
-        {t:4500, fn:function(){
+        {t:5400, fn:function(){
           setSteps(2);
-          setStatus('Track lock confirmed.','Сопровождение подтверждено.');
-          pushLog('Track lock <b>confirmed</b>', 'Захват цели <b>подтверждён</b>');
+          if(pick){ pick.classList.remove('hit'); }
+          objCountEl.textContent = '0';
+          setStatus('Visibility lost — identity held.','Видимость потеряна — идентичность сохранена.');
+          pushLog('Visibility <b>lost</b> (simulated)', 'Видимость <b>потеряна</b> (симуляция)');
         }},
-        {t:5700, fn:function(){
+        {t:6600, fn:function(){
           setSteps(3);
-          setStatus('Alert dispatched to operator.','Оповещение отправлено оператору.');
-          pushLog('Alert <b>dispatched</b> to operator', 'Оповещение <b>отправлено</b> оператору');
+          setStatus('Search state active.','Состояние поиска активно.');
+          pushLog('Search state <b>active</b> (simulated)', 'Состояние поиска <b>активно</b> (симуляция)');
         }},
-        {t:6900, fn:function(){
+        {t:7800, fn:function(){
           setSteps(4);
-          setStatus('Classification: non-threat. Standing by.','Классификация: не угроза. Ожидание.');
-          pushLog('Operator <b>acknowledged</b>', 'Оператор <b>подтвердил приём</b>');
+          if(pick){ pick.classList.add('hit'); }
+          objCountEl.textContent = '1';
+          setStatus('Target reacquired (simulated).','Цель захвачена повторно (симуляция).');
+          pushLog('Target <b>reacquired</b> (simulated)', 'Цель <b>захвачена повторно</b> (симуляция)');
         }},
-        {t:9500, fn:function(){ /* loop */ runCycle(); }}
+        {t:10400, fn:function(){ /* loop */ runCycle(); }}
       ];
       seq.forEach(function(step){ setTimeout(step.fn, step.t); });
     }
@@ -1894,33 +2179,22 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     interceptIO.observe(intercept);
   }
 
-  /* Architecture diagram sequential highlight */
+  /* Architecture pipeline sequential highlight */
   var arch = document.getElementById('arch');
   if(arch){
-    var nodes = arch.querySelectorAll('.arch-node');
-    var connectors = arch.querySelectorAll('.arch-connector');
+    var pnodes = arch.querySelectorAll('.pipe-node');
     var archIO = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
         if(entry.isIntersecting){
-          nodes[0].classList.add('on');
-          var i = 0;
-          function step(){
-            if(i >= connectors.length) return;
-            connectors[i].classList.add('on');
-            setTimeout(function(){
-              nodes[i+1].classList.add('on');
-              i++;
-              setTimeout(step, reduceMotion ? 0 : 200);
-            }, reduceMotion ? 0 : 260);
-          }
-          setTimeout(step, reduceMotion ? 0 : 200);
+          pnodes.forEach(function(n,i){
+            setTimeout(function(){ n.classList.add('on'); }, reduceMotion ? 0 : 160*i);
+          });
           archIO.disconnect();
         }
       });
-    }, {threshold:.35});
+    }, {threshold:.15});
     archIO.observe(arch);
   }
-
   /* Timeline active glow already static via .active class */
 
   /* ---------- Glitch-in headline on boot complete ---------- */
@@ -1941,7 +2215,6 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
   var opConsoleToggle = document.getElementById('opConsoleToggle');
   var opLog = document.getElementById('opLog');
   var missionClockEl = document.getElementById('missionClock');
-  var opBatteryEl = document.getElementById('opBattery');
   var bootTime = Date.now();
 
   if(opConsoleToggle){
@@ -1962,15 +2235,6 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
   tickClock();
   setInterval(tickClock, 1000);
 
-  var batteryLevel = 98;
-  if(!reduceMotion){
-    setInterval(function(){
-      batteryLevel -= 1;
-      if(batteryLevel < 56){ batteryLevel = 98; pushLog('Unit swapped — battery <b>reset</b>', 'Замена аккумулятора — сброс <b>заряда</b>'); }
-      if(opBatteryEl){ opBatteryEl.textContent = batteryLevel + '%'; }
-    }, 13000);
-  }
-
   var logQueue = [];
   function pushLog(en, ru){
     if(!opLog) return;
@@ -1984,21 +2248,22 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     opLog.appendChild(div);
     while(opLog.children.length > 10){ opLog.removeChild(opLog.firstChild); }
   }
-  pushLog('System initialized. All units nominal.', 'Система инициализирована. Все узлы в норме.');
-  setTimeout(function(){ pushLog('Uplink established — secure channel.', 'Канал связи установлен — защищённое соединение.'); }, 900);
+  pushLog('Demo console <b>initialized</b> (simulation).', 'Демо-консоль <b>запущена</b> (симуляция).');
+  setTimeout(function(){ pushLog('Recorded-video demo loaded. No live link.', 'Демо на записанном видео загружено. Живой связи нет.'); }, 900);
 
   /* contextual log line once per section on first view */
   var sectionLogs = {
-    'problem':['Reviewing coverage gaps…','Анализ пробелов покрытия...'],
-    'why-now':['Cross-referencing market signals…','Сопоставление рыночных сигналов...'],
-    'technology':['Loading system architecture…','Загрузка архитектуры системы...'],
-    'safety':['Compliance check: pass.','Проверка соответствия: пройдена.'],
-    'market':['Validating methodology…','Проверка методологии...'],
-    'roadmap':['Syncing mission timeline…','Синхронизация графика миссии...'],
-    'team':['Operator profile loaded.','Профиль оператора загружен.'],
-    'status':['Status sync complete.','Синхронизация статуса завершена.'],
-    'investment':['Funding channel open.','Канал финансирования открыт.'],
-    'contact':['Awaiting transmission…','Ожидание передачи...']
+    'problem':['Section: problem &amp; opportunity','Раздел: проблема и возможность'],
+    'technology':['Section: core technology','Раздел: ключевые технологии'],
+    'progress':['Section: development progress','Раздел: ход разработки'],
+    'control-station':['Section: Control Station','Раздел: Станция управления'],
+    'updates':['Section: engineering updates','Раздел: инженерные обновления'],
+    'roadmap':['Section: roadmap','Раздел: план'],
+    'safety':['Section: safety &amp; validation','Раздел: безопасность и проверка'],
+    'market':['Section: market &amp; business model','Раздел: рынок и бизнес-модель'],
+    'team':['Section: founder &amp; CTO search','Раздел: основатель и поиск CTO'],
+    'investment':['Section: investment opportunity','Раздел: инвестиционная возможность'],
+    'contact':['Section: contact','Раздел: контакты']
   };
   var sectionIO = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
@@ -2038,16 +2303,17 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     opCursor.style.display = 'none';
   }
 
-  /* ---------- Vehicle intercept: real-footage tracking reticle + suspect dossier ---------- */
+  /* ---------- Recorded-video demo: tracking overlay + simulated track card ---------- */
   var vReticle = document.getElementById('vReticle');
   var videoPanel = document.getElementById('videoPanel');
   var interceptVideo = document.getElementById('interceptVideo');
   var vReticleLabel = document.getElementById('vReticleLabel');
   var dossier = document.getElementById('dossier');
   var dossierClose = document.getElementById('dossierClose');
-  var subjCoordsEl = document.getElementById('subjCoords');
+  var vpX = document.getElementById('vpX'), vpY = document.getElementById('vpY'), vpT = document.getElementById('vpT');
+  var subjFrameEl = document.getElementById('subjFrame');
 
-  /* [time(s), x%, y%] — real vehicle position, extracted via CSRT tracking over the source footage */
+  /* [time(s), x%, y%] — overlay position over the recorded footage, extracted offline with an OpenCV CSRT tracker (demo overlay only) */
   var trackKF = [[0.500,53.81,32.31],[0.767,53.78,33.66],[1.033,53.75,35.47],[1.300,53.70,37.06],[1.567,53.70,38.64],[1.833,53.75,40.50],[2.100,53.73,42.23],[2.367,53.70,43.67],[2.633,53.81,45.44],[2.900,53.78,47.16],[3.167,53.78,48.65],[3.433,53.83,50.61],[3.700,53.91,52.61],[3.967,53.86,54.28],[4.233,53.91,56.52],[4.500,53.96,58.57],[4.767,53.91,60.43],[5.033,53.94,62.71],[5.300,53.94,65.22],[5.567,53.94,67.27],[5.833,53.94,69.88],[6.100,53.81,72.72],[6.367,53.57,75.56],[6.633,53.21,78.82],[6.900,52.61,82.03],[7.167,51.82,85.57],[7.433,50.81,89.15],[7.700,49.66,92.60]];
 
   function trackedPos(t){
@@ -2064,12 +2330,31 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
 
   if(vReticle && videoPanel && interceptVideo){
     var trackVisible = false;
+    var pursuitTimer = null, lockStartedAt = null;
+    var subjPursuitEl = document.getElementById('subjPursuit');
+    function updateVLabel(){
+      var isRu = htmlEl.getAttribute('data-lang') === 'ru';
+      vReticleLabel.innerHTML = 'SIM-01<br>' + (isRu ? 'СОПРОВОЖДЕНИЕ' : 'TRACKING');
+    }
+    updateVLabel();
+    langEn.addEventListener('click', updateVLabel);
+    langRu.addEventListener('click', updateVLabel);
+    var lastTxt = '';
     (function raf(){
-      var pos = trackedPos(interceptVideo.currentTime || 0);
+      var tt = interceptVideo.currentTime || 0;
+      var pos = trackedPos(tt);
       if(pos){
         vReticle.style.left = pos.x + '%';
         vReticle.style.top = pos.y + '%';
         if(!trackVisible){ vReticle.classList.add('visible'); trackVisible = true; }
+        var txt = pos.x.toFixed(1)+'|'+pos.y.toFixed(1)+'|'+tt.toFixed(1);
+        if(txt !== lastTxt){
+          lastTxt = txt;
+          vpX.textContent = pos.x.toFixed(1) + '%';
+          vpY.textContent = pos.y.toFixed(1) + '%';
+          vpT.textContent = tt.toFixed(1) + ' s';
+          if(subjFrameEl) subjFrameEl.textContent = 'X ' + pos.x.toFixed(1) + '% · Y ' + pos.y.toFixed(1) + '%';
+        }
       } else if(trackVisible){
         vReticle.classList.remove('visible');
         if(dossier.classList.contains('open')) closeDossier();
@@ -2078,31 +2363,11 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
       requestAnimationFrame(raf);
     })();
 
-    var baseLat = 41.7183, baseLng = -74.0041;
-    var coordTimer = null;
-    var pursuitTimer = null;
-    var lockStartedAt = null;
-    var subjPursuitEl = document.getElementById('subjPursuit');
-    var subjPredictedEl = document.getElementById('subjPredicted');
-    var predictedHeadings = ['NE · 042°','N · 358°','ENE · 068°','NNE · 021°'];
-
-    function updateVLabel(){
-      var isRu = htmlEl.getAttribute('data-lang') === 'ru';
-      vReticleLabel.innerHTML = 'TRK-2299<br>' + (isRu ? 'СОПРОВОЖДЕНИЕ' : 'TRACKING');
-    }
     function pad2(n){ return String(n).padStart(2,'0'); }
     function openDossier(){
       dossier.classList.add('open');
-      updateVLabel();
-      pushLog('Vehicle <b>RC-7742-KX</b> — track lock acquired', 'ТС <b>RC-7742-KX</b> — цель захвачена');
-      if(coordTimer) clearInterval(coordTimer);
-      coordTimer = setInterval(function(){
-        baseLat += (Math.random()-0.5)*0.0007;
-        baseLng += (Math.random()-0.5)*0.0007;
-        subjCoordsEl.textContent = Math.abs(baseLat).toFixed(4)+'°N '+Math.abs(baseLng).toFixed(4)+'°W';
-      }, 1100);
+      pushLog('Simulated track card <b>opened</b>', 'Симуляция: карточка цели <b>открыта</b>');
       lockStartedAt = Date.now();
-      if(subjPredictedEl) subjPredictedEl.textContent = predictedHeadings[Math.floor(Math.random()*predictedHeadings.length)];
       if(pursuitTimer) clearInterval(pursuitTimer);
       if(subjPursuitEl) subjPursuitEl.textContent = '00:00';
       pursuitTimer = setInterval(function(){
@@ -2112,7 +2377,6 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     }
     function closeDossier(){
       dossier.classList.remove('open');
-      if(coordTimer){ clearInterval(coordTimer); coordTimer = null; }
       if(pursuitTimer){ clearInterval(pursuitTimer); pursuitTimer = null; }
     }
     vReticle.addEventListener('click', function(){
@@ -2124,6 +2388,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     if(dossierClose){
       dossierClose.addEventListener('click', function(e){ e.stopPropagation(); closeDossier(); });
     }
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && dossier.classList.contains('open')) closeDossier(); });
     document.addEventListener('click', function(e){
       if(dossier.classList.contains('open') && !dossier.contains(e.target) && !vReticle.contains(e.target)){
         closeDossier();
@@ -2131,69 +2396,111 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:var(--bla
     });
   }
 
-  /* ---------- Video panel: telemetry ticker + compass + robust autoplay ---------- */
-  (function(){
-    var vpCoord = document.getElementById('vpCoord');
-    var vpWind = document.getElementById('vpWind');
-    var vpHum = document.getElementById('vpHum');
-    var vpNeedle = document.getElementById('vpNeedle');
-    var vpHeading = document.getElementById('vpHeading');
-    if(!vpCoord) return;
-    var lat = 41.7132, lng = -74.0021, heading = 42;
-    if(!reduceMotion){
-      setInterval(function(){
-        lat += (Math.random()-0.5)*0.0004;
-        lng += (Math.random()-0.5)*0.0004;
-        vpCoord.textContent = Math.abs(lat).toFixed(2)+'°N '+Math.abs(lng).toFixed(2)+'°W';
-        vpWind.textContent = (4 + Math.round(Math.random()*5)) + ' KT';
-        vpHum.textContent = (48 + Math.round(Math.random()*14)) + '%';
-        heading = (heading + (Math.random()-0.5)*10 + 360) % 360;
-        vpNeedle.style.transform = 'rotate(' + heading.toFixed(0) + 'deg)';
-        vpHeading.textContent = String(Math.round(heading)).padStart(3,'0') + '°';
-      }, 2600);
-    }
-  })();
-
   /* ---------- Robust video autoplay: retry on first user interaction if blocked ---------- */
   if(interceptVideo){
     var tryPlay = function(){
       var p = interceptVideo.play();
       if(p && p.catch){ p.catch(function(){ /* will retry on interaction */ }); }
     };
-    tryPlay();
-    ['click','touchstart','keydown','scroll'].forEach(function(evt){
+    var smallScreen = window.matchMedia('(max-width:899px)').matches;
+    if(smallScreen){
+      /* video panel is hidden on small screens: do not download or play it */
+      interceptVideo.removeAttribute('autoplay');
+      interceptVideo.preload = 'none';
+    } else if(reduceMotion){
+      interceptVideo.removeAttribute('autoplay');
+    } else {
+      tryPlay();
+    }
+    if(!smallScreen && !reduceMotion) ['click','touchstart','keydown','scroll'].forEach(function(evt){
       document.addEventListener(evt, function retryPlay(){
         if(interceptVideo.paused){ tryPlay(); }
       }, {once:false, passive:true});
     });
     interceptVideo.addEventListener('error', function(){
-      pushLog('Feed signal lost — reconnecting…', 'Сигнал потерян — переподключение...');
+      pushLog('Demo video <b>unavailable</b>', 'Демо-видео <b>недоступно</b>');
     });
   }
 
-  /* ---------- Contact form -> mailto ---------- */
+  /* ---------- Contact form -> mailto (honest: nothing is sent to a server) ---------- */
   var form = document.getElementById('deckForm');
   var success = document.getElementById('formSuccess');
   if(form){
     form.addEventListener('submit', function(e){
       e.preventDefault();
-      var name = document.getElementById('fName').value.trim();
+      var ru = htmlEl.getAttribute('data-lang') === 'ru';
+      var nameEl = document.getElementById('fName'), emailEl = document.getElementById('fEmail');
+      var name = nameEl.value.trim(), email = emailEl.value.trim();
       var company = document.getElementById('fCompany').value.trim();
-      var email = document.getElementById('fEmail').value.trim();
-      var subject = encodeURIComponent('Pitch Deck Request — ' + name);
+      var message = document.getElementById('fMessage').value.trim();
+      success.classList.remove('error');
+      if(!name || !email || !emailEl.validity.valid){
+        success.textContent = ru ? 'Укажите имя и корректный email.' : 'Please enter your name and a valid email.';
+        success.classList.add('show','error');
+        (!name ? nameEl : emailEl).focus();
+        return;
+      }
+      var subject = encodeURIComponent('Investor Deck Request — ' + name);
       var body = encodeURIComponent(
         'Name: ' + name + '\n' +
         'Company: ' + company + '\n' +
-        'Email: ' + email + '\n\nPlease send the RazorClaw Systems pitch deck.'
+        'Email: ' + email + '\n' +
+        (message ? 'Message: ' + message + '\n' : '') +
+        '\nPlease send the RazorClaw Systems investor deck.'
       );
       window.location.href = 'mailto:2025pilot.guard@gmail.com?subject=' + subject + '&body=' + body;
-      var ru = htmlEl.getAttribute('data-lang') === 'ru';
       success.textContent = ru
-        ? 'Открывается почтовый клиент с вашим запросом на 2025pilot.guard@gmail.com.'
-        : 'Opening your email client with the request to 2025pilot.guard@gmail.com.';
+        ? 'Мы открыли ваш почтовый клиент с готовым письмом. Данные не отправлены, пока вы не отправите письмо. Если ничего не открылось, напишите на 2025pilot.guard@gmail.com.'
+        : 'We opened your email client with a pre-filled message. Nothing has been sent until you send it. If nothing opened, write to 2025pilot.guard@gmail.com.';
       success.classList.add('show');
     });
   }
+
+  /* ---------- Engineering Updates: rendered from the JSON block #updatesData ---------- */
+  (function(){
+    var list = document.getElementById('updatesList');
+    var dataEl = document.getElementById('updatesData');
+    if(!list || !dataEl) return;
+    var items = [];
+    try { items = JSON.parse(dataEl.textContent); } catch(err){ items = []; }
+    var stKind = {'Demonstrated':'done','In Development':'dev','Testing':'test','Planned':'plan'};
+    var stGlyph = {done:'\u2713',dev:'\u25CF',test:'\u25B2',plan:'\u25CB'};
+    var stRu = {'Demonstrated':'Продемонстрировано','In Development':'В разработке','Testing':'Тестирование','Planned':'Запланировано'};
+    function el(tag, cls, txt, ru){
+      var n = document.createElement(tag);
+      if(cls) n.className = cls;
+      if(txt != null) n.textContent = txt;
+      if(ru){ n.classList.add('t'); n.dataset.ru = ru; }
+      return n;
+    }
+    if(!items.length){
+      var empty = el('li','upd-empty','No public engineering updates yet.','Публичных инженерных обновлений пока нет.');
+      list.appendChild(empty);
+      return;
+    }
+    items.forEach(function(it){
+      var li = el('li','upd');
+      var head = el('div','upd-head');
+      head.appendChild(el('span','upd-date mono', it.date_en || it.date, it.date_ru));
+      head.appendChild(el('span','upd-cat mono', it.cat, it.cat_ru));
+      li.appendChild(head);
+      li.appendChild(el('h3','', it.title, it.title_ru));
+      li.appendChild(el('p','', it.text, it.text_ru));
+      var foot = el('div','upd-foot');
+      var kind = stKind[it.status] || 'plan';
+      var tag = el('span','tag st st-'+kind);
+      tag.appendChild(el('span','g', stGlyph[kind])).setAttribute('aria-hidden','true');
+      tag.appendChild(el('span','', it.status, stRu[it.status]));
+      foot.appendChild(tag);
+      if(it.link && /^https?:\/\//.test(it.link)){
+        var a = el('a','upd-link','Evidence \u2192','Подтверждение \u2192');
+        a.href = it.link; a.target = '_blank'; a.rel = 'noopener noreferrer';
+        foot.appendChild(a);
+      }
+      li.appendChild(foot);
+      list.appendChild(li);
+    });
+  })();
 })();
 </script>
 </body>
