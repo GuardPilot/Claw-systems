@@ -1,36 +1,33 @@
-# RazorClaw Systems — Investor Website v2
+# RazorClaw Systems — Investor Website v2.1
 
-Статический сайт: `index.html` + папка `assets/`. Сборки нет. Запуск на GitHub Pages: загрузите содержимое папки в корень репозитория (`index.html` и `assets/` рядом), Settings → Pages → Deploy from branch → `/ (root)`.
+Статический сайт: `index.html` + `assets/`. Без сборки. GitHub Pages: загрузите содержимое папки в корень репозитория (`index.html` и `assets/` рядом).
 
-## Структура
-```
-index.html
-assets/ logo.png, symbol.png, og-image.png, intercept.webm, intercept.mp4, intercept-poster.jpg
-```
+## Реальные материалы: просто положите файлы в `assets/`
+Сайт сам подхватывает их, ничего править не нужно:
+| Файл | Что появится |
+|---|---|
+| `control-station-classic.png` (или .jpg/.webp) | реальный скриншот во вкладке Classic вместо схемы |
+| `control-station-tactical.png` | изображение во вкладке Tactical; остаётся с пометкой DESIGN CONCEPT, пока реализация не подтверждена |
+| `control-station-demo.webm` или `.mp4` | кнопка «Watch Software Demonstration» с модальным окном (Esc закрывает) |
+| `founder.jpg` (или .png/.webp) | фотография основателя вместо инициалов |
+Пока файла нет, соответствующая кнопка/блок честно не показываются или показывают схему.
 
-## Как добавить запись в Engineering Updates
-В `index.html` найдите блок `<script type="application/json" id="updatesData">` и добавьте объект в массив (новые записи — сверху):
-
+## Engineering Updates
+В `index.html` найдите `<script type="application/json" id="updatesData">` и добавьте объект в массив (новые сверху). Первые 3 показываются сразу, остальные — по кнопке View All Updates.
 ```json
-{
- "date": "2026-11", "date_en": "November 2026", "date_ru": "Ноябрь 2026",
- "title": "Title", "title_ru": "Заголовок",
- "cat": "Tracking", "cat_ru": "Сопровождение",
- "text": "Short factual description.", "text_ru": "Краткое фактическое описание.",
- "status": "Demonstrated",
- "link": "https://... (необязательно, только публичная ссылка на подтверждение)"
-}
+{"date_en":"November 2026","date_ru":"Ноябрь 2026","title":"...","title_ru":"...","cat":"Tracking","cat_ru":"Сопровождение","text":"...","text_ru":"...","status":"Demonstrated","link":"https://... (необязательно)"}
 ```
-- `cat`: Tracking, Recovery, Control Station, Testing, UI.
-- `status`: Demonstrated, In Development, Testing, Planned (другие значения отображаются как Planned).
-- Точные результаты тестов публикуйте только после проверки CI/test report. Не публикуйте токены, внутренние адреса и чувствительные детали.
-- Страница остальным не затрагивается: список строится скриптом из этого блока.
+`cat`: Tracking, Recovery, Control Station, Testing, UI. `status`: Demonstrated, In Development, Testing, Planned. Точные результаты тестов — только после проверки CI/test report.
 
-## Скриншоты Control Station
-Сейчас в разделе 06 показана схема-макет с пометкой DESIGN CONCEPT. Когда будут реальные скриншоты, положите их в `assets/` и замените блок `<figure class="cs-visual">` на `<img>` с alt-текстом.
+## Доказательства в Development Progress
+Кнопки доказательств скрыты, пока материала нет. Чтобы добавить, в конце `index.html` найдите `var EVIDENCE={};` и заполните, например:
+`var EVIDENCE={tracking:[{label:'Screenshot',label_ru:'Скриншот',url:'assets/tracking.png'}]};` (ключи: tracking, identity, recovery, station, runtime, tactical).
+
+## Цвет акцента
+По умолчанию — утверждённый Cyber Blue #00E0FF. Красный вариант из ТЗ v2.1 включается одним атрибутом: `<html lang="en" data-lang="en" data-accent="red">`.
 
 ## Откат
-Предыдущая версия сохранена в `backup_before_v2/index.html` (рядом с `assets/` из этого же архива).
+`backup_before_v2/index.html` — версия до обновлений 17.10.2026; `backup_v2_hud.html` — промежуточная версия v2 (HUD-стиль).
 
 ## Форма
-Форма работает через `mailto:` и ничего не отправляет на сервер — это явно написано на сайте.
+Работает через `mailto:` и ничего не отправляет на сервер — на сайте это сказано прямо.
