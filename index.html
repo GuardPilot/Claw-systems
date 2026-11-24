@@ -813,11 +813,9 @@ footer{border-top:1px solid var(--line);background:var(--surface);padding:clamp(
 .brand img{height:52px}
 @media (max-width:420px){.brand img{height:40px}}
 .partnerships{grid-template-columns:repeat(2,minmax(0,1fr))}
-.droneport-renders{display:grid;grid-template-columns:3fr 2fr;gap:clamp(16px,3vw,28px)}
 .droneport-renders figure{margin:0;min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
-.droneport-renders img{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:var(--bg)}
+.droneport-renders img{display:block;width:100%;height:auto;background:var(--bg)}
 .droneport-renders figcaption{padding:12px 16px;color:var(--muted)}
-@media (max-width:767px){.droneport-renders{grid-template-columns:1fr}}
 @media (max-width:599px){.partnerships{grid-template-columns:1fr}}
 </style>
 </head>
@@ -985,10 +983,12 @@ footer{border-top:1px solid var(--line);background:var(--surface);padding:clamp(
       <p class="t" data-ru="Концепция предусматривает металлический антивандальный корпус, выдвижную посадочную платформу, подъёмную дверь и откидную консоль оператора и отдельное укрытие от непогоды.">The design includes a vandal-resistant metal enclosure, a sliding landing platform, a lift-up door, a fold-down operator console and a separate weather shelter.</p>
     </div>
     <div class="droneport-renders">
-      <figure><img src="assets/droneport-rc-dp1500.jpg" alt="RC-DP1500 exterior design render" loading="lazy" decoding="async">
-        <figcaption class="t" data-ru="КОНЦЕПЦИЯ · Общий вид RC-DP1500">DESIGN CONCEPT · RC-DP1500 exterior</figcaption></figure>
-      <figure><img src="assets/droneport-console.jpg" alt="RC-DP1500 operator console design render" loading="lazy" decoding="async">
-        <figcaption class="t" data-ru="КОНЦЕПЦИЯ · Консоль оператора">DESIGN CONCEPT · Operator console</figcaption></figure>
+      <figure>
+        <a href="assets/droneport-rc-dp1500-concept.png" target="_blank" rel="noopener">
+          <img src="assets/droneport-rc-dp1500-concept.png" width="1672" height="941" alt="RC-DP1500 design concept showing the station, platform and operator shelter" loading="lazy" decoding="async">
+        </a>
+        <figcaption class="t" data-ru="КОНЦЕПЦИЯ · Проектная визуализация RC-DP1500. Откройте изображение, чтобы рассмотреть детали.">DESIGN CONCEPT · RC-DP1500 design rendering. Open the image to view details.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
