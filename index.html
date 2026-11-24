@@ -1254,7 +1254,7 @@ doc.addEventListener('visibilitychange',function(){if(vid&&!vid.hidden){if(doc.h
   var loaded=false, vis=false, running=false;
   function load(){ if(loaded)return; loaded=true;
     (window.RC_SRC?RC_SRC():[['assets/intercept-v2.webm','video/webm'],['assets/intercept.mp4','video/mp4']]).forEach(function(s){var el=doc.createElement('source');el.src=s[0];el.type=s[1];av.appendChild(el)});
-    av.preload='auto'; av.load(); }
+    av.preload='metadata'; av.load(); }
   function tick(){
     var t=av.currentTime||0, q=pos(t);
     tm.textContent=t.toFixed(3)+'s'; fr.textContent=Math.round(t*30);
@@ -1262,15 +1262,20 @@ doc.addEventListener('visibilitychange',function(){if(vid&&!vid.hidden){if(doc.h
     else{r2.classList.remove('on');tk.textContent='—'}
     if(vis)requestAnimationFrame(tick); else running=false;
   }
-  var auto=!reduce&&!(navigator.connection&&navigator.connection.saveData);
+  var saveData=navigator.connection&&navigator.connection.saveData;
+  var auto=!reduce&&!saveData;
   if('IntersectionObserver' in window){
     new IntersectionObserver(function(es){es.forEach(function(e){
       vis=e.isIntersecting;
-      if(vis){ if(auto){load();av.play().catch(function(){})} if(!running){running=true;requestAnimationFrame(tick)} }
+      if(vis){ if(!saveData)load(); if(auto)av.play().catch(function(){}); if(!running){running=true;requestAnimationFrame(tick)} }
       else if(!av.paused) av.pause();
     })},{threshold:.35}).observe(st);
   }
-  av.addEventListener('play',load);
+  av.addEventListener('play',function(){
+    if(loaded)return;
+    load();
+    av.play().catch(function(){});
+  });
 })();
 
 /* ---------- architecture modules ---------- */
@@ -1323,7 +1328,7 @@ var controlStationMedia={classic:null,tactical:null,demo:null};
 ['classic','tactical'].forEach(function(v){
   var src=controlStationMedia[v];
   if(!src)return;
-  var im=doc.createElement('img'); im.className='shot'; im.setAttribute('data-v',v); im.loading='lazy';
+  var im=doc.createElement('img'); im.className='shot'; im.setAttribute('data-v',v);
   im.alt=v==='classic'?'Screenshot of the RazorClaw Control Station, Classic interface':'Tactical interface design concept for the RazorClaw Control Station';
   im.onload=function(){view.appendChild(im);selectTab(current);};
   im.src=src;
